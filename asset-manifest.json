@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.bc85c453.css",
-    "main.js": "/static/js/main.6579c0cd.js",
-    "static/media/Personal.png": "/static/media/Personal.6f4fb16e434bce1d39f0.png",
-    "static/media/server (1).png": "/static/media/server (1).09711f39cec176c31993.png",
-    "static/media/node-js.png": "/static/media/node-js.e328955d6bbbf3ebc72b.png",
-    "static/media/figma.png": "/static/media/figma.72fbc535ebe253a5dbc4.png",
-    "static/media/html.png": "/static/media/html.6e930594286d8afe4c79.png",
-    "static/media/css-3.png": "/static/media/css-3.463e319bad8e0edf1ef7.png",
-    "static/media/js.png": "/static/media/js.3dfb665e058d08c99f28.png",
-    "static/media/1174949_js_react js_logo_react_react native_icon.png": "/static/media/1174949_js_react js_logo_react_react native_icon.300fdb4945d83d0537d4.png",
-    "index.html": "/index.html",
-    "main.bc85c453.css.map": "/static/css/main.bc85c453.css.map",
-    "main.6579c0cd.js.map": "/static/js/main.6579c0cd.js.map"
+    "main.css": "/DFBPortfolio/static/css/main.bc85c453.css",
+    "main.js": "/DFBPortfolio/static/js/main.9215b394.js",
+    "static/media/Personal.png": "/DFBPortfolio/static/media/Personal.6f4fb16e434bce1d39f0.png",
+    "static/media/server (1).png": "/DFBPortfolio/static/media/server (1).09711f39cec176c31993.png",
+    "static/media/node-js.png": "/DFBPortfolio/static/media/node-js.e328955d6bbbf3ebc72b.png",
+    "static/media/figma.png": "/DFBPortfolio/static/media/figma.72fbc535ebe253a5dbc4.png",
+    "static/media/html.png": "/DFBPortfolio/static/media/html.6e930594286d8afe4c79.png",
+    "static/media/css-3.png": "/DFBPortfolio/static/media/css-3.463e319bad8e0edf1ef7.png",
+    "static/media/js.png": "/DFBPortfolio/static/media/js.3dfb665e058d08c99f28.png",
+    "static/media/1174949_js_react js_logo_react_react native_icon.png": "/DFBPortfolio/static/media/1174949_js_react js_logo_react_react native_icon.300fdb4945d83d0537d4.png",
+    "index.html": "/DFBPortfolio/index.html",
+    "main.bc85c453.css.map": "/DFBPortfolio/static/css/main.bc85c453.css.map",
+    "main.9215b394.js.map": "/DFBPortfolio/static/js/main.9215b394.js.map"
   },
   "entrypoints": [
     "static/css/main.bc85c453.css",
-    "static/js/main.6579c0cd.js"
+    "static/js/main.9215b394.js"
   ]
 }
