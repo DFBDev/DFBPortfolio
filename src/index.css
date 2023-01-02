@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary1: #343434;
+    --primary2: #272727;
+    --border1: #7E38D7;
+    --border2: #6712AA;
+    --circleBorder: #8722D7;
+    --exitColor: #9B3AE8;
+}
+.App{
+    background-color: var(--primary1);
+}
+header{
+   
+}
+.navOpts{
+    
+}
+.section1{
+    height:35vw;
+    min-height:150px;
+}
+.personalImg{
+    height:30vw;
+    max-height:350px;
+}
+.introText{
+    display:flex;
+    justify-content:center;
+    align-items:left;
+    flex-direction:column;
+    margin-left:5%;
+    font-size:2.5vw;
+    height:30vw;
+    width:80%;
+    color:white;
+}
+.section2{
+    background-color: var(--primary2);
+}
+.skillsHeader{
+    margin-top:4%;
+    margin-left:4vw;
+}
+.skillSlot{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:17vw;
+    height:17vw;
+    background-color: var(--primary1);
+    margin:2%;
+    color:White;
+    border-radius:16px;
+}
+.ssImg{
+    width:40%;
+    margin:0% auto 8% auto;
+}
+.ssCap{
+    @apply font-thin;
+    font-size: 1.5vw;
+}
