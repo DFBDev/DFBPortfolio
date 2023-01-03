@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* CSS cases where Tailwind would be more inefficent to implement (given my current experience) are below */
+
 :root {
     --primary1: #343434;
     --primary2: #272727;
@@ -33,10 +35,25 @@ header{
     align-items:left;
     flex-direction:column;
     margin-left:5%;
+    margin-top:15%;
     font-size:2.5vw;
     height:30vw;
     width:80%;
     color:white;
+    line-height:1.5;
+}
+.persLinks{
+    transform:translateY(4vw);
+}
+.indvLinks{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:20%;
+    height:90%;
+    border-style:solid;
+    border-width:2px;
+    border-color:var(--border1);
 }
 .section2{
     background-color: var(--primary2);
@@ -60,6 +77,10 @@ header{
 .ssImg{
     width:40%;
     margin:0% auto 8% auto;
+}
+.imgSpec{
+    width:50%;
+    margin:0% auto 20% auto;
 }
 .ssCap{
     @apply font-thin;
