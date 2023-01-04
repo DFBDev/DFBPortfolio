@@ -1,9 +1,13 @@
 {
   "files": {
-    "main.css": "/DFBPortfolio/static/css/main.bc85c453.css",
-    "main.js": "/DFBPortfolio/static/js/main.9215b394.js",
+    "main.css": "/DFBPortfolio/static/css/main.be8a1b4e.css",
+    "main.js": "/DFBPortfolio/static/js/main.32a58355.js",
+    "static/media/ss2.png": "/DFBPortfolio/static/media/ss2.40196a02577c2d4bb5bf.png",
+    "static/media/ss1.png": "/DFBPortfolio/static/media/ss1.6ed9b9e6b5bfc93e86c8.png",
+    "static/media/ss3.png": "/DFBPortfolio/static/media/ss3.88a2e24cb2c11983bca9.png",
     "static/media/Personal.png": "/DFBPortfolio/static/media/Personal.6f4fb16e434bce1d39f0.png",
     "static/media/server (1).png": "/DFBPortfolio/static/media/server (1).09711f39cec176c31993.png",
+    "static/media/resume-and-cv.png": "/DFBPortfolio/static/media/resume-and-cv.ebc422c2e2bccbbb34b4.png",
     "static/media/node-js.png": "/DFBPortfolio/static/media/node-js.e328955d6bbbf3ebc72b.png",
     "static/media/figma.png": "/DFBPortfolio/static/media/figma.72fbc535ebe253a5dbc4.png",
     "static/media/html.png": "/DFBPortfolio/static/media/html.6e930594286d8afe4c79.png",
@@ -11,11 +15,11 @@
     "static/media/js.png": "/DFBPortfolio/static/media/js.3dfb665e058d08c99f28.png",
     "static/media/1174949_js_react js_logo_react_react native_icon.png": "/DFBPortfolio/static/media/1174949_js_react js_logo_react_react native_icon.300fdb4945d83d0537d4.png",
     "index.html": "/DFBPortfolio/index.html",
-    "main.bc85c453.css.map": "/DFBPortfolio/static/css/main.bc85c453.css.map",
-    "main.9215b394.js.map": "/DFBPortfolio/static/js/main.9215b394.js.map"
+    "main.be8a1b4e.css.map": "/DFBPortfolio/static/css/main.be8a1b4e.css.map",
+    "main.32a58355.js.map": "/DFBPortfolio/static/js/main.32a58355.js.map"
   },
   "entrypoints": [
-    "static/css/main.bc85c453.css",
-    "static/js/main.9215b394.js"
+    "static/css/main.be8a1b4e.css",
+    "static/js/main.32a58355.js"
   ]
 }
