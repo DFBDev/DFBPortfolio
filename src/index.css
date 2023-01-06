@@ -117,19 +117,23 @@ header{
     align-items:center;
     flex-direction:column;
     flex:1 1 0;
-    height:40vw;
-    max-height:400px;
+    height:50vw;
+    padding-bottom:5%;
+    max-height:500px;
+    max-width:300px;
 }
 .projHead{
     width:80%;
+    padding-top:3%;
+    padding-bottom:3%;
     max-width:200px;
     margin-right:auto;
-    margin-left:auto;
+    margin-left:3%;
     color:white;
     font-size:2.5vw;
 }
 .projHolder{
-    width:80%;
+    width:20vw;
     height:55%;
     max-width:200px;
     max-height:250px;
@@ -139,22 +143,62 @@ header{
     border-radius:5%;
     background-color: #381454;
 }
+.projHolderUno{
+    width:80%;
+    height:55%;
+    max-width:200px;
+    max-height:250px;
+    border-style:solid;
+    border-color: var(--border2);
+    border-width:4px; 
+    border-radius:5%;
+    background-color: #381454;
+}
 .projTitleHolder{
     display:flex;
+    justify-content:center;
+    align-items:center;
     width:80%;
     height:30%;
-    max-width:200px;
-    background-color: var(--primary3);
+    margin-top:15%;
+
 }
 .projTitle{
     display:flex;
     justify-content:center;
     align-items:center;
+    flex-direction: column;
     text-align:center;
-    height:100%;
-    width:50%;
-    font-size:1.4vw;
-    color: var(--primary3);
+    font-size:1.2vw;
+    color:white;
+    max-width:150px;
+    max-height:150px;
+    width:1vw;
+}
+.pT{
+    width:13vw;
+    margin-bottom:50%;
+    border-bottom-style:solid;
+    border-bottom-width:1px;
+    border-bottom-color: var(--border1);
+    padding-bottom:50%;
+}
+.toolsList{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap:wrap;
+    width:14vw;
+    height:20%;
+    font-size:0.4rem;
+    max-width:150px;
+    min-width:80px;
+}
+.tlSlot{
+    width:fit-content;
+    margin:2%;
+    padding:5%;
+    background-color: #3f3f3f;
 }
 .piHolder{
     display:flex;
@@ -175,22 +219,9 @@ header{
     width:95%;
     border-radius:4px;
 }
-.projHolderUno{
-    width:80%;
-    height:50%;
-    max-width:200px;
-    max-height:250px;
-    margin-left:auto;
-    margin-right:auto;
-    border-style:solid;
-    border-color: var(--border2);
-    border-width:4px; 
-    border-radius:5%;
-    background-color: #381454;
-}
 .aboutSec{
-    height:35vw;
-    max-height:450px;
+    height:45vw;
+    max-height:400px;
     background-color: var(--primary2);
 }
 footer{

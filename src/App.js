@@ -1,8 +1,20 @@
+import AOS from "aos";
+import 'aos/dist/aos.css';
+import { useEffect, useState } from "react";
+import { ProjCaption1 } from "./comps";
 
 //Main body application, components can be found in comps.js.
 //Elements are stylized by a mixture of Tailwind and Vanilla CSS.
 
 function App() {
+  let [capSelect, csSet] = useState(0);
+
+  {/* Animation initializer for scrolling animations using AOS library */}
+
+  useEffect(() => {
+    AOS.init({duration: 1000})
+  }, []);
+
   return (
     <body className="App flex flex-col">
       <nav className="flex w-full h-16">
@@ -26,8 +38,8 @@ function App() {
             I'm a Front-end Developer!
           </p>
           <ul className="persLinks flex w-3/4 h-1/4 justify-center items-center justify-between">
-            <li className="indvLinks"><img src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")}></img></li>
-            <li className="indvLinks"><img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img></li>
+            <li className="indvLinks"><a href="https://www.linkedin.com/in/donathan-brown-929255248/" target="_blank"><img src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")}></img></a></li>
+            <li className="indvLinks"><a href="https://github.com/DFBDev" target="_blank"><img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img></a></li>
             <li className="indvLinks"><img className="w-1/2 m-auto" src={require("./Images/resume-and-cv.png")}></img></li>
           </ul>
         </article>
@@ -39,70 +51,110 @@ function App() {
           <span className="font-thin md:text-lg">Click for Photo Credits</span>
         </header>
         <article className="ssHolder flex flex-wrap justify-center items-center justify-around mb-5">
-          <div className="skillSlot">
+          <div className="skillSlot" data-aos="fade-right" data-aos-duration="1000">
             <figure><img className="ssImg" src={require("./Images/html.png")}></img></figure>
             <figcaption className="ssCap">HTML</figcaption>
           </div>
-          <div className="skillSlot">
+          <div className="skillSlot" data-aos="fade-right" data-aos-duration="1250">
             <figure><img className="ssImg" src={require("./Images/css-3.png")}></img></figure>
             <figcaption className="ssCap">CSS</figcaption>
           </div>
-          <div className="skillSlot">
+          <div className="skillSlot" data-aos="fade-right" data-aos-duration="1500">
             <figure><img className="ssImg" src={require("./Images/js.png")}></img></figure>
             <figcaption className="ssCap">Javascript</figcaption>
           </div>
-          <div className="skillSlot">
+          <div className="skillSlot" data-aos="fade-right" data-aos-duration="1750">
             <figure><img className="ssImg" src={require("./Images/1174949_js_react js_logo_react_react native_icon.png")}></img></figure>
             <figcaption className="ssCap">React.js</figcaption>
           </div>
-          <div className="skillSlot">
+          <div className="skillSlot" data-aos="fade-left" data-aos-duration="1000">
             <figure><img className="ssImg" src={require("./Images/node-js.png")}></img></figure>
             <figcaption className="ssCap">Node.js</figcaption>
           </div>
-          <div className="skillSlot">
+          <div className="skillSlot" data-aos="fade-left" data-aos-duration="1250">
             <figure><img className="ssImg" src={require("./Images/server (1).png")}></img></figure>
             <figcaption className="ssCap">Firebase/BaaS</figcaption>
           </div>
-          <div className="skillSlot">
+          <div className="skillSlot" data-aos="fade-left" data-aos-duration="1500">
             <figure><img className="ssImg" src={require("./Images/figma.png")}></img></figure>
             <figcaption className="ssCap">Figma/UI Design</figcaption>
           </div>
-          <div className="skillSlot">
+          <div className="skillSlot" data-aos="fade-left" data-aos-duration="1750">
             <figure><img className="imgSpec" src={require("./Images/tailwind-css-icon.png")}></img></figure>
             <figcaption className="ssCap">Tailwind</figcaption> 
           </div>
         </article>
       </section>
-      <section className="flex justify-center items-center">
+      <section className="flex justify-center items-center flex-col">
         {/* Projects Section */}
+        <header className="projHead md:text-xl w-100 text-sm font-normal" data-aos="fade-right">
+          Recent Projects
+          <h1 className=" w-36 font-thin text-white text-lg text-left">Click to view!</h1>
+          </header>
         <article className="psContainer w-full flex">
         <div className="projSec">
-          <header className="projHead md:text-xl text-sm font-normal">Recent Projects</header>
-          <div className="projHolderUno mr-auto">
-            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/Messaging-App"><img className="projImg" src={require("./Images/ss1.png")}></img></a></figure>
+          <div className="projHolderUno mt-auto" data-aos="fade-right" data-aos-duration="1000">
+            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/Messaging-App" target="_blank"><img className="projImg" src={require("./Images/ss1.png")}></img></a></figure>
+          </div>
+          <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
+            <div className="projTitle">
+              <h1 className="pT">Messaging App</h1>
+              <ul className="toolsList">
+                <li className="tlSlot">HTML</li>
+                <li className="tlSlot">CSS</li>
+                <li className="tlSlot">React</li>
+                <li className="tlSlot">Node.js</li>
+                <li className="tlSlot">Firebase/API</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="projSec pt-6">
-          <div className="projHolder mb-auto">
-            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/SignUpForm"><img className="projImg" src={require("./Images/ss2.png")}></img></a></figure>
+        <div className="projSec">
+          <div className="projHolder mt-auto" data-aos="fade-right" data-aos-duration="1250">
+            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/SignUpForm" target="_blank"><img className="projImg" src={require("./Images/ss2.png")}></img></a></figure>
           </div>
-          <div className="projTitleHolder bg-orange-100 mt-5 rounded-tl-lg rounded-tr-lg">
-            <div className="projTitle border-solid border-r-violet-600 border-r-2">Messaging<br></br>App</div>
-            <div className="projTitle">Calculator</div>
-          </div>
-        </div>
-        <div className="projSec pb-6">
-          <div className="projTitleHolder bg-orange-100 mb-auto rounded-bl-lg rounded-br-lg">
-            <div className="projTitle border-solid border-r-violet-600 border-r-2">SignUp<br></br>Form</div>
-            <div className="projTitle">Emissary<br></br>Connect</div>
-          </div>
-          <div className="projHolder mt-3">
-            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/React-Calculator"><img className="projImg" src={require("./Images/ss3.png")}></img></a></figure>
+          <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
+            <div className="projTitle">
+            <h1 className="pT">Sign-Up Form</h1>
+              <ul className="toolsList">
+                <li className="tlSlot">HTML</li>
+                <li className="tlSlot">Vanilla CSS</li>
+                <li className="tlSlot">Template Showcase</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div className="projSec pt-3">
-          <div className="projHolder mb-auto mt-3">
-              <figure className="piHolder"><img className="projImg"></img></figure>
+        <div className="projSec">
+          <div className="projHolder mt-auto" data-aos="fade-left" data-aos-duration="1250">
+            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/React-Calculator" target="_blank"><img className="projImg" src={require("./Images/ss3.png")}></img></a></figure>
+          </div>
+          <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
+            <div className="projTitle">
+            <h1 className="pT">Calculator</h1>
+              <ul className="toolsList">
+                <li className="tlSlot">HTML</li>
+                <li className="tlSlot">CSS</li>
+                <li className="tlSlot">React</li>
+                <li className="tlSlot">Node.js</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div className="projSec">
+          <div className="projHolder mt-auto" data-aos="fade-left" data-aos-duration="1000">
+              <figure className="piHolder"><img className="projImgg"></img></figure>
+          </div>
+          <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
+            <div className="projTitle">
+            <h1 className="pT">EmissaryConnect</h1>
+              <ul className="toolsList">
+                <li className="tlSlot">HTML</li>
+                <li className="tlSlot">CSS</li>
+                <li className="tlSlot">React</li>
+                <li className="tlSlot">Node.js</li>
+                <li className="tlSlot">Firebase/API</li>
+              </ul>
+            </div>
           </div>
         </div>
         </article>
