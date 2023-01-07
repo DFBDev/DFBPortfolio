@@ -4,6 +4,17 @@
 
 /* CSS cases where Tailwind would be more inefficent to implement (given my current experience) are below */
 
+@keyframes slideDown {
+    0%{
+        transform:translateY(-20%);
+        opacity:0;
+    }
+    100%{
+        transform:translateY(0%);
+        opacity:1;
+    }
+}
+
 :root {
     --primary1: #343434;
     --primary2: #272727;
@@ -64,6 +75,59 @@ header{
     border-width:2px;
     border-color:var(--border1);
     background-color: rgb(15, 15, 15, 0.2);
+}
+.il1:hover ::after{
+    display:flex;
+    width:20%;
+    justify-content:center;
+    text-align:center;
+    max-width:68px;
+    min-width:5px;
+    font-size:0.8rem;
+    top:100%;
+    content: 'LinkedIn Profile';
+    position:absolute;
+    color:white;
+    overflow:visible;
+    font-weight:100;
+    opacity:1;
+    animation: slideDown 0.5s ease-in-out;
+
+}
+.il2:hover ::after{
+    display:flex;
+    width:20%;
+    justify-content:center;
+    text-align:center;
+    max-width:68px;
+    min-width:12px;
+    font-size:0.8rem;
+    top:100%;
+    content: 'GitHub Profile';
+    position:absolute;
+    color:white;
+    overflow:visible;
+    font-weight:100;
+    opacity:1;
+    animation: slideDown 0.5s ease-in-out;
+}
+.il3:hover ::after{
+    display:flex;
+    width:20%;
+    justify-content:center;
+    text-align:center;
+    max-width:66px;
+    min-width:20px;
+    font-size:0.8rem;
+    top:100%;
+    right:0.2%;
+    content: 'Resume';
+    position:absolute;
+    color:white;
+    overflow:visible;
+    font-weight:100;
+    opacity:1;
+    animation: slideDown 0.5s ease-in-out;
 }
 .section2{
     background-color: var(--primary2);
@@ -224,7 +288,44 @@ header{
     max-height:400px;
     background-color: var(--primary2);
 }
+.aboutCircle{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:12vw;
+    width:12vw;
+    max-width:120px;
+    max-height:120px;
+    border-radius:100%;
+    border-style:solid;
+    border-color: var(--border2);
+    border-width:2px;
+    background-color: #313131;
+    overflow:visible;
+}
+.aboutHeader{
+    font-size:1.8vw;
+    position:absolute;
+}
+.aboutBox{
+    width:90%;
+    height:25%;
+    max-width:300px;
+    background-color:#313131;
+}
 footer{
-    color:white;
-    background-color: #222222;
+    color:#4e4e4e;
+    background-color: var(--primary1);
+    padding-bottom:6%;
+}
+.footExtension{
+    display:flex;
+    padding-top:10%;
+    justify-content:center;
+    align-items:center;
+    background-color: var(--primary1);
+    width:100%;
+    height:8vh;
+    color:#4e4e4e;
+    font-size:0.8em;
 }

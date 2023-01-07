@@ -1,13 +1,26 @@
 import AOS from "aos";
 import 'aos/dist/aos.css';
-import { useEffect, useState } from "react";
-import { ProjCaption1 } from "./comps";
+import { useEffect, useRef } from "react";
 
 //Main body application, components can be found in comps.js.
-//Elements are stylized by a mixture of Tailwind and Vanilla CSS.
+//Elements are stylized by a mixture of Tailwind and Vanilla CSS (whichever is circumstantially easier).
 
 function App() {
-  let [capSelect, csSet] = useState(0);
+  const aboutRef = useRef(null);
+  const skillRef = useRef(null);
+  const projRef = useRef(null);
+
+  const clickScroll = () => {
+    aboutRef.current?.scrollIntoView({behavior: 'smooth'});
+  }
+
+  const clickScroll2 = () => {
+    skillRef.current?.scrollIntoView({behavior: 'smooth'});
+  }
+
+  const clickScroll3 = () => {
+    projRef.current?.scrollIntoView({behavior: 'smooth'});
+  }
 
   {/* Animation initializer for scrolling animations using AOS library */}
 
@@ -21,9 +34,9 @@ function App() {
         {/* Navigation Bar Content */}
         <h1 className="my-auto w-24 font-thin text-center text-white text-xl"><span className="font-normal text-white">DFB</span>Dev</h1>
         <ul className="navOpts flex justify-center justify-between items-center max-w-xlg w-3/5 ml-auto mr-5 font-thin text-white sm:text-xl">
-          <li className="opt">About me</li>
-          <li className="opt">Skills</li>
-          <li className="opt">Projects</li>
+          <li className="opt" onClick={clickScroll}>About me</li>
+          <li className="opt" onClick={clickScroll2}>Skills</li>
+          <li className="opt" onClick={clickScroll3}>Projects</li>
           <li className="opt">Contact</li>
         </ul>
       </nav>
@@ -37,10 +50,10 @@ function App() {
             <span className="font-thin">I also go by DFBDev or DemDB.</span>
             I'm a Front-end Developer!
           </p>
-          <ul className="persLinks flex w-3/4 h-1/4 justify-center items-center justify-between">
-            <li className="indvLinks"><a href="https://www.linkedin.com/in/donathan-brown-929255248/" target="_blank"><img src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")}></img></a></li>
-            <li className="indvLinks"><a href="https://github.com/DFBDev" target="_blank"><img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img></a></li>
-            <li className="indvLinks"><img className="w-1/2 m-auto" src={require("./Images/resume-and-cv.png")}></img></li>
+          <ul className="persLinks flex w-3/4 h-1/4 justify-center items-center justify-between" ref={skillRef}>
+            <li className="indvLinks il1"><a href="https://www.linkedin.com/in/donathan-brown-929255248/" target="_blank"><img src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")}></img></a></li>
+            <li className="indvLinks il2"><a href="https://github.com/DFBDev" target="_blank"><img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img></a></li>
+            <li className="indvLinks il3"><a><img className="w-1/2 m-auto" src={require("./Images/resume-and-cv.png")}></img></a></li>
           </ul>
         </article>
       </section>
@@ -85,11 +98,11 @@ function App() {
           </div>
         </article>
       </section>
-      <section className="flex justify-center items-center flex-col">
+      <section className="flex justify-center items-center flex-col" ref={projRef}>
         {/* Projects Section */}
-        <header className="projHead md:text-xl w-100 text-sm font-normal" data-aos="fade-right">
+        <header className="projHead md:text-xl w-100 font-normal" data-aos="fade-right">
           Recent Projects
-          <h1 className=" w-36 font-thin text-white text-lg text-left">Click to view!</h1>
+          <h1 className=" w-36 font-thin text-white md:text-lg text-left">Click to view!</h1>
           </header>
         <article className="psContainer w-full flex">
         <div className="projSec">
@@ -118,7 +131,7 @@ function App() {
             <h1 className="pT">Sign-Up Form</h1>
               <ul className="toolsList">
                 <li className="tlSlot">HTML</li>
-                <li className="tlSlot">Vanilla CSS</li>
+                <li className="tlSlot">CSS</li>
                 <li className="tlSlot">Template Showcase</li>
               </ul>
             </div>
@@ -159,8 +172,30 @@ function App() {
         </div>
         </article>
       </section>
-      <section className="aboutSec flex justify-center items-center text-white">About Me section</section>
-      <footer className="flex justify-center items-center py-3 text-sm">Developed/Designed by © DFBDev</footer>
+      <section className="aboutSec flex justify-center items-center text-white" ref={aboutRef}>
+        <article className="flex flex-auto h-full justify-center items-center flex-col justify-around">
+          <div className="aboutBox ml-auto" data-aos="fade-up-left">Box1</div>
+          <div className="aboutBox ml-auto" data-aos="fade-down-left">Box2</div>
+        </article>
+        <header className="flex flex-auto h-full justify-center items-center">
+          <div className="aboutCircle">
+            <h1 className="aboutHeader font-thin">A bit more about me...</h1>
+          </div>
+        </header>
+        <article className="flex flex-auto h-full justify-center items-center justify-around flex-col">
+          <div className="aboutBox mr-auto" data-aos="fade-up-right">Box1</div>
+          <div className="aboutBox mr-auto" data-aos="fade-down-right">Box2</div>
+        </article>
+      </section>
+      <footer className="flex justify-center items-center md:text-lg text-sm flex-col">
+        <div className="footExtension">
+          Made with<span className="hover:text-purple-500 transition ease-in-out">&nbsp;ReactJS</span>, 
+          <span className="hover:text-purple-500 transition ease-in-out">&nbsp;Tailwind</span>, 
+          and <span className="hover:text-purple-500 transition ease-in-out">&nbsp;AOS {"(michalsnik)"}</span>. 
+          Hosted by <span className="hover:text-purple-500 transition ease-in-out">&nbsp;GitHub Pages</span>.
+        </div>
+        <p className="flex-auto py-3">Developed/Designed by © DFBDev</p>
+      </footer>
     </body>
   );
 }
