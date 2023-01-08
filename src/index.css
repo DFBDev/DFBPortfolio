@@ -313,6 +313,44 @@ header{
     max-width:300px;
     background-color:#313131;
 }
+.abName{
+    display:flex;
+    align-items:flex-end;
+    width:fit-content;
+    font-weight:300;
+    font-size:2.2vw;
+    margin-left:10%;
+}
+.abTopHalf{
+    display:flex;
+    height:55%;
+}
+.abBotHalf{
+    display:flex;
+    height:45%;
+    font-size:1.5vw;
+    font-weight:100;
+}
+.abDesc{
+    width:auto;
+    margin-left:10%;
+}
+.dots{
+    display:flex;
+    justify-content:center;
+    justify-content: space-around;
+    width:20%;
+    padding-top:3%;
+    padding-right:3%;
+    margin-left:auto;
+}
+.indvDot{
+    width:1vw;
+    height:1vw;
+    background-color: #8722D7;
+    border-radius:100%;
+    margin-top:10%;
+}
 footer{
     color:#4e4e4e;
     background-color: var(--primary1);

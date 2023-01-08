@@ -174,8 +174,40 @@ function App() {
       </section>
       <section className="aboutSec flex justify-center items-center text-white" ref={aboutRef}>
         <article className="flex flex-auto h-full justify-center items-center flex-col justify-around">
-          <div className="aboutBox ml-auto" data-aos="fade-up-left">Box1</div>
-          <div className="aboutBox ml-auto" data-aos="fade-down-left">Box2</div>
+          <div className="aboutBox ml-auto" data-aos="fade-up-left">
+            <div className="abTopHalf">
+              <div className="abName">
+                Other Skills
+              </div>
+              <div className="dots">
+                <div className="indvDot"></div>
+                <div className="indvDot"></div>
+                <div className="indvDot"></div>
+              </div>
+            </div>
+            <div className="abBotHalf">
+              <div className="abDesc">
+                Soft skills, technical, etc.
+              </div>
+            </div>
+            </div>
+          <div className="aboutBox ml-auto" data-aos="fade-down-left">
+          <div className="abTopHalf">
+              <div className="abName">
+                Education
+              </div>
+              <div className="dots">
+                <div className="indvDot"></div>
+                <div className="indvDot"></div>
+                <div className="indvDot"></div>
+              </div>
+            </div>
+            <div className="abBotHalf">
+              <div className="abDesc">
+                Soft skills, technical, etc.
+              </div>
+            </div>
+          </div>
         </article>
         <header className="flex flex-auto h-full justify-center items-center">
           <div className="aboutCircle">
@@ -183,8 +215,40 @@ function App() {
           </div>
         </header>
         <article className="flex flex-auto h-full justify-center items-center justify-around flex-col">
-          <div className="aboutBox mr-auto" data-aos="fade-up-right">Box1</div>
-          <div className="aboutBox mr-auto" data-aos="fade-down-right">Box2</div>
+          <div className="aboutBox mr-auto" data-aos="fade-up-right">
+          <div className="abTopHalf">
+              <div className="abName">
+                Work History
+              </div>
+              <div className="dots">
+                <div className="indvDot"></div>
+                <div className="indvDot"></div>
+                <div className="indvDot"></div>
+              </div>
+            </div>
+            <div className="abBotHalf">
+              <div className="abDesc">
+                Soft skills, technical, etc.
+              </div>
+            </div>
+          </div>
+          <div className="aboutBox mr-auto" data-aos="fade-down-right">
+          <div className="abTopHalf">
+              <div className="abName">
+                Personal
+              </div>
+              <div className="dots">
+                <div className="indvDot"></div>
+                <div className="indvDot"></div>
+                <div className="indvDot"></div>
+              </div>
+            </div>
+            <div className="abBotHalf">
+              <div className="abDesc">
+                Soft skills, technical, etc.
+              </div>
+            </div>
+          </div>
         </article>
       </section>
       <footer className="flex justify-center items-center md:text-lg text-sm flex-col">
