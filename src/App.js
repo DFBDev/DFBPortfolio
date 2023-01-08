@@ -106,7 +106,7 @@ function App() {
           </header>
         <article className="psContainer w-full flex">
         <div className="projSec">
-          <div className="projHolderUno mt-auto" data-aos="fade-right" data-aos-duration="1000">
+          <div className="projHolderUno mt-auto">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/Messaging-App" target="_blank"><img className="projImg" src={require("./Images/ss1.png")}></img></a></figure>
           </div>
           <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
@@ -123,7 +123,7 @@ function App() {
           </div>
         </div>
         <div className="projSec">
-          <div className="projHolder mt-auto" data-aos="fade-right" data-aos-duration="1250">
+          <div className="projHolder mt-auto">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/SignUpForm" target="_blank"><img className="projImg" src={require("./Images/ss2.png")}></img></a></figure>
           </div>
           <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
@@ -138,7 +138,7 @@ function App() {
           </div>
         </div>
         <div className="projSec">
-          <div className="projHolder mt-auto" data-aos="fade-left" data-aos-duration="1250">
+          <div className="projHolder mt-auto">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/React-Calculator" target="_blank"><img className="projImg" src={require("./Images/ss3.png")}></img></a></figure>
           </div>
           <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
@@ -154,7 +154,7 @@ function App() {
           </div>
         </div>
         <div className="projSec">
-          <div className="projHolder mt-auto" data-aos="fade-left" data-aos-duration="1000">
+          <div className="projHolder mt-auto">
               <figure className="piHolder"><img className="projImgg"></img></figure>
           </div>
           <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">

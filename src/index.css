@@ -25,6 +25,7 @@
     --exitColor: #9B3AE8;
 }
 .App{
+    overflow:hidden;
     background-color: var(--primary1);
 }
 header{
