@@ -32,8 +32,8 @@ function App() {
     <body className="App flex flex-col">
       <nav className="flex w-full h-16">
         {/* Navigation Bar Content */}
-        <h1 className="my-auto w-24 font-thin text-center text-white sm:text-xl 2xl:text-3xl"><span className="font-normal text-white">DFB</span>Dev</h1>
-        <ul className="navOpts flex justify-center justify-between items-center max-w-xlg w-3/5 ml-auto mr-5 font-thin text-white sm:text-xl 2xl:text-3xl">
+        <h1 className="my-auto ml-4 w-24 font-thin text-center text-white sm:text-xl 2xl:text-3xl"><span className="font-normal text-white">DFB</span>Dev</h1>
+        <ul className="navOpts flex justify-center justify-between items-center max-w-xlg w-3/5 ml-auto mr-5 my-auto font-thin text-white sm:text-xl 2xl:text-3xl">
           <li className="opt" onClick={clickScroll}>About me</li>
           <li className="opt" onClick={clickScroll2}>Skills</li>
           <li className="opt" onClick={clickScroll3}>Projects</li>
@@ -42,7 +42,7 @@ function App() {
       </nav>
       <section className="section1 flex w-screen">
         {/* Introduction Section */}
-        <figure className="flex w-3/4"><img className="personalImg mt-auto mx-auto" src={require("./Images/Personal.png")}/></figure>
+        <figure className="flex w-3/4"><img className="personalImg mt-auto" src={require("./Images/Personal3.png")}/></figure>
         <article className="flex w-3/4 justify-center items-center flex-col">
           <p className="introText">
             <span className="font-thin">Hello! My name is...</span>
@@ -61,7 +61,7 @@ function App() {
         {/* Skills Section */}
         <header className="skillsHeader flex flex-col text-white my-5">
           <span className="font-normal md:text-xl 2xl:text-3xl">Skills/Expertise</span>
-          <span className="font-thin md:text-lg 2xl:text-xl">Click for Photo Credits</span>
+          <span className="font-thin md:text-lg 2xl:text-xl text-xs">Click for Photo Credits</span>
         </header>
         <article className="ssHolder flex flex-wrap justify-center items-center justify-around mb-5">
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1000">
@@ -106,7 +106,7 @@ function App() {
           </header>
         <article className="psContainer w-full flex">
         <div className="projSec">
-          <div className="projHolderUno mt-auto">
+          <div className="projHolderUno mt-auto" data-aos="fade">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/Messaging-App" target="_blank"><img className="projImg" src={require("./Images/ss1.png")}></img></a></figure>
           </div>
           <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
@@ -123,7 +123,7 @@ function App() {
           </div>
         </div>
         <div className="projSec">
-          <div className="projHolder mt-auto">
+          <div className="projHolder mt-auto" data-aos="fade">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/SignUpForm" target="_blank"><img className="projImg" src={require("./Images/ss2.png")}></img></a></figure>
           </div>
           <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
@@ -138,7 +138,7 @@ function App() {
           </div>
         </div>
         <div className="projSec">
-          <div className="projHolder mt-auto">
+          <div className="projHolder mt-auto" data-aos="fade">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/React-Calculator" target="_blank"><img className="projImg" src={require("./Images/ss3.png")}></img></a></figure>
           </div>
           <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
@@ -154,7 +154,7 @@ function App() {
           </div>
         </div>
         <div className="projSec">
-          <div className="projHolder mt-auto">
+          <div className="projHolder mt-auto" data-aos="fade">
               <figure className="piHolder"><img className="projImgg"></img></figure>
           </div>
           <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
@@ -211,7 +211,7 @@ function App() {
         </article>
         <header className="flex flex-auto h-full justify-center items-center">
           <div className="aboutCircle">
-            <h1 className="aboutHeader font-thin md:text-lg text-xs">A bit more about me...</h1>
+            <h1 className="aboutHeader font-thin md:text-lg lg:text-2xl text-xs">A bit more about me...</h1>
           </div>
         </header>
         <article className="flex flex-auto h-full justify-center items-center justify-around flex-col">

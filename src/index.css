@@ -56,17 +56,19 @@
 }
 
 :root {
-    --primary1: #343434;
-    --primary2: #272727;
+    --primary2: #0a132b;
+    --primary1: #0d1a3b;
     --primary3: #572886;
-    --border1: #7E38D7;
+    --border1: #122c6f;
     --border2: #6712AA;
-    --circleBorder: #8722D7;
+    --circleBorder: #193d96;
     --exitColor: #9B3AE8;
 }
 .App{
     overflow:hidden;
     background-color: var(--primary1);
+    background-image: url("./Images/33.jpg");
+    background-size:cover;
 }
 header{
    
@@ -79,7 +81,7 @@ header{
 }
 .opt:hover{
     transform:scale(1.1);
-    color:#a13eec;
+    @apply text-sky-600;
 }
 .section1{
     height:35vw;
@@ -88,6 +90,8 @@ header{
 .personalImg{
     height:30vw;
     max-height:650px;
+    margin-left:auto;
+    transition:all 0.3s ease-in-out;
 }
 .introText{
     display:flex;
@@ -120,7 +124,7 @@ header{
     transition: all 0.3s ease-in-out;
 }
 .il1:hover, .il2:hover, .il3:hover{
-    border-color:rgb(168, 46, 255)
+    border-color:rgb(26, 78, 189)
 }
 .il1:hover::after, .il2:hover::after, .il3:hover::after {
     opacity:1;
@@ -189,11 +193,12 @@ header{
     max-width:900px;
 }
 .skillsHeader{
-    width:92vw;
+    width:94%;
     max-width:1105px;
     margin-top:4%;
     margin-left:3%;
     margin-right:auto;
+    padding-bottom:1%;
 }
 .skillSlot{
     display:flex;
@@ -222,8 +227,7 @@ header{
     font-size:1.4vw;
 }
 .sec3{
-    background-image: url("./Images/black-abstract-background-wallpaper-image.jpg");
-    background-size: cover;
+    padding-bottom:3%;
 }
 .psContainer{
     max-width:1200px;
@@ -236,40 +240,61 @@ header{
     flex-direction:column;
     flex:1 1 0;
     height:50vw;
+    padding-top:2%;
     padding-bottom:5%;
     max-height:500px;
-    max-width:600px;
+    max-width:800px;
 }
 .projHead{
-    width:100%;
+    width:94%;
     padding-top:3%;
-    padding-bottom:3%;
+    padding-bottom:1%;
     margin-right:auto;
     margin-left:3%;
     color:white;
     font-size:2.5vw;
 }
 .projHolder{
-    width:20vw;
+    width:80%;
     height:55%;
     max-width:200px;
     max-height:250px;
-    border-style:solid;
-    border-color: var(--border2);
-    border-width:4px;
     border-radius:5%;
-    background-color: #381454;
+    background-color: var(--primary2);
+    transition:all 0.3s ease-in-out;
 }
 .projHolderUno{
     width:80%;
     height:55%;
     max-width:200px;
     max-height:250px;
-    border-style:solid;
-    border-color: var(--border2);
-    border-width:4px; 
     border-radius:5%;
-    background-color: #381454;
+    background-color: var(--primary2);
+    transition:all 0.3s ease-in-out;
+}
+.projHolder:hover .projImg, .projHolderUno:hover .projImg{
+    transform:scale(0.9);
+}
+.projHolder::before, .projHolderUno::before{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    content:"Visit Site";
+    position: absolute;
+    width:100%;
+    top:1%;
+    height:100%;
+    border-radius:8px;
+    background-color: rgb(26, 26, 26, 0.6);
+    opacity:0;
+    z-index:-1;
+    color:white;
+    pointer-events: none;
+    transition:all 0.3s ease-in-out;
+}
+.projHolder:hover::before, .projHolderUno:hover::before{
+    opacity:1;
+    z-index:9;
 }
 .projTitleHolder{
     display:flex;
@@ -316,7 +341,7 @@ header{
     width:fit-content;
     margin:2%;
     padding:5%;
-    background-color: #3f3f3f;
+    background-color: var(--primary2);
 }
 .piHolder{
     display:flex;
@@ -335,7 +360,8 @@ header{
 .projImg{
     height:95%;
     width:95%;
-    border-radius:4px;
+    border-radius:4%;
+    transition:all 0.3s ease-in-out;
 }
 .aboutSec{
     height:45vw;
@@ -346,15 +372,15 @@ header{
     display:flex;
     justify-content:center;
     align-items:center;
-    height:12vw;
-    width:12vw;
-    max-width:120px;
-    max-height:120px;
+    height:10vw;
+    width:10vw;
+    max-width:170px;
+    max-height:170px;
     border-radius:100%;
     border-style:solid;
-    border-color: var(--border2);
+    border-color: var(--circleBorder);
     border-width:2px;
-    background-color: #313131;
+    background-color: var(--primary1);
     overflow:visible;
 }
 .aboutHeader{
@@ -365,7 +391,8 @@ header{
     height:25%;
     max-width:300px;
     max-height:120px;
-    background-color:#313131;
+    background-color:var(--primary1);
+    border-radius:8px;
 }
 .abName{
     display:flex;
@@ -400,14 +427,14 @@ header{
 .indvDot{
     width:1vw;
     height:1vw;
-    background-color: #8722D7;
+    background-color: #1e2586;
     border-radius:100%;
     margin-top:10%;
     max-width:10px;
     max-height:10px;
 }
 footer{
-    color:#4e4e4e;
+    color:#122f5a;
     background-color: var(--primary1);
     padding-bottom:6%;
     max-height:400px;
@@ -420,6 +447,6 @@ footer{
     background-color: var(--primary1);
     width:100%;
     height:8vh;
-    color:#4e4e4e;
+    color:#122f5a;
     font-size:0.7em;
 }
