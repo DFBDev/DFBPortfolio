@@ -33,7 +33,7 @@ function App() {
       <nav className="flex w-full h-16">
         {/* Navigation Bar Content */}
         <h1 className="my-auto w-24 font-thin text-center text-white text-xl"><span className="font-normal text-white">DFB</span>Dev</h1>
-        <ul className="navOpts flex justify-center justify-between items-center max-w-xlg w-3/5 ml-auto mr-5 font-thin text-white sm:text-xl">
+        <ul className="navOpts flex justify-center justify-between items-center max-w-xlg w-3/5 ml-auto mr-5 font-thin text-white sm:text-xl 2xl:text-3xl">
           <li className="opt" onClick={clickScroll}>About me</li>
           <li className="opt" onClick={clickScroll2}>Skills</li>
           <li className="opt" onClick={clickScroll3}>Projects</li>
@@ -44,7 +44,7 @@ function App() {
         {/* Introduction Section */}
         <figure className="flex w-3/4"><img className="personalImg mt-auto mx-auto" src={require("./Images/Personal.png")}/></figure>
         <article className="flex w-3/4 justify-center items-center flex-col">
-          <p className="introText">
+          <p className="introText lg:text-3xl sm:text-xl text-sm">
             <span className="font-thin">Hello! My name is...</span>
             Donathan Brown.
             <span className="font-thin">I also go by DFBDev or DemDB.</span>
@@ -60,8 +60,8 @@ function App() {
       <section className="section2 flex flex-col justify-center w-screen">
         {/* Skills Section */}
         <header className="skillsHeader flex flex-col text-white my-5">
-          <span className="font-normal md:text-xl">Skills/Expertise</span>
-          <span className="font-thin md:text-lg">Click for Photo Credits</span>
+          <span className="font-normal md:text-xl 2xl:text-3xl">Skills/Expertise</span>
+          <span className="font-thin md:text-lg 2xl:text-xl">Click for Photo Credits</span>
         </header>
         <article className="ssHolder flex flex-wrap justify-center items-center justify-around mb-5">
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1000">
@@ -100,9 +100,9 @@ function App() {
       </section>
       <section className="flex justify-center items-center flex-col" ref={projRef}>
         {/* Projects Section */}
-        <header className="projHead md:text-xl w-100 font-normal" data-aos="fade-right">
+        <header className="projHead md:text-xl 2xl:text-3xl w-100 font-normal" data-aos="fade-right">
           Recent Projects
-          <h1 className=" w-36 font-thin text-white md:text-lg text-left">Click to view!</h1>
+          <h1 className=" w-36 font-thin text-white md:text-lg 2xl:text-xl text-left">Click to view!</h1>
           </header>
         <article className="psContainer w-full flex">
         <div className="projSec">
@@ -176,7 +176,7 @@ function App() {
         <article className="flex flex-auto h-full justify-center items-center flex-col justify-around">
           <div className="aboutBox ml-auto" data-aos="fade-up-left">
             <div className="abTopHalf">
-              <div className="abName">
+              <div className="abName md:text-lg text-sm">
                 Other Skills
               </div>
               <div className="dots">
@@ -186,14 +186,14 @@ function App() {
               </div>
             </div>
             <div className="abBotHalf">
-              <div className="abDesc">
+              <div className="abDesc md:text-sm text-xs">
                 Soft skills, technical, etc.
               </div>
             </div>
             </div>
           <div className="aboutBox ml-auto" data-aos="fade-down-left">
           <div className="abTopHalf">
-              <div className="abName">
+              <div className="abName md:text-lg text-sm">
                 Education
               </div>
               <div className="dots">
@@ -203,7 +203,7 @@ function App() {
               </div>
             </div>
             <div className="abBotHalf">
-              <div className="abDesc">
+              <div className="abDesc md:text-sm text-xs">
                 Soft skills, technical, etc.
               </div>
             </div>
@@ -211,13 +211,13 @@ function App() {
         </article>
         <header className="flex flex-auto h-full justify-center items-center">
           <div className="aboutCircle">
-            <h1 className="aboutHeader font-thin">A bit more about me...</h1>
+            <h1 className="aboutHeader font-thin md:text-lg text-xs">A bit more about me...</h1>
           </div>
         </header>
         <article className="flex flex-auto h-full justify-center items-center justify-around flex-col">
           <div className="aboutBox mr-auto" data-aos="fade-up-right">
           <div className="abTopHalf">
-              <div className="abName">
+              <div className="abName md:text-lg text-sm">
                 Work History
               </div>
               <div className="dots">
@@ -227,14 +227,14 @@ function App() {
               </div>
             </div>
             <div className="abBotHalf">
-              <div className="abDesc">
+              <div className="abDesc md:text-sm text-xs">
                 Soft skills, technical, etc.
               </div>
             </div>
           </div>
           <div className="aboutBox mr-auto" data-aos="fade-down-right">
           <div className="abTopHalf">
-              <div className="abName">
+              <div className="abName md:text-lg text-sm">
                 Personal
               </div>
               <div className="dots">
@@ -244,8 +244,8 @@ function App() {
               </div>
             </div>
             <div className="abBotHalf">
-              <div className="abDesc">
-                Soft skills, technical, etc.
+              <div className="abDesc md:text-sm text-xs">
+                Softskills, technical, etc.
               </div>
             </div>
           </div>
