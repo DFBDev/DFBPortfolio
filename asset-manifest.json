@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/DFBPortfolio/static/css/main.66fa600b.css",
-    "main.js": "/DFBPortfolio/static/js/main.e410e97f.js",
+    "main.css": "/DFBPortfolio/static/css/main.5133714a.css",
+    "main.js": "/DFBPortfolio/static/js/main.8ce8b5fa.js",
     "static/media/ss2.png": "/DFBPortfolio/static/media/ss2.40196a02577c2d4bb5bf.png",
     "static/media/ss1.png": "/DFBPortfolio/static/media/ss1.6ed9b9e6b5bfc93e86c8.png",
     "static/media/ss3.png": "/DFBPortfolio/static/media/ss3.88a2e24cb2c11983bca9.png",
@@ -15,11 +15,11 @@
     "static/media/js.png": "/DFBPortfolio/static/media/js.3dfb665e058d08c99f28.png",
     "static/media/1174949_js_react js_logo_react_react native_icon.png": "/DFBPortfolio/static/media/1174949_js_react js_logo_react_react native_icon.300fdb4945d83d0537d4.png",
     "index.html": "/DFBPortfolio/index.html",
-    "main.66fa600b.css.map": "/DFBPortfolio/static/css/main.66fa600b.css.map",
-    "main.e410e97f.js.map": "/DFBPortfolio/static/js/main.e410e97f.js.map"
+    "main.5133714a.css.map": "/DFBPortfolio/static/css/main.5133714a.css.map",
+    "main.8ce8b5fa.js.map": "/DFBPortfolio/static/js/main.8ce8b5fa.js.map"
   },
   "entrypoints": [
-    "static/css/main.66fa600b.css",
-    "static/js/main.e410e97f.js"
+    "static/css/main.5133714a.css",
+    "static/js/main.8ce8b5fa.js"
   ]
 }
