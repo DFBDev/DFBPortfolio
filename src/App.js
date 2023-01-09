@@ -32,7 +32,7 @@ function App() {
     <body className="App flex flex-col">
       <nav className="flex w-full h-16">
         {/* Navigation Bar Content */}
-        <h1 className="my-auto w-24 font-thin text-center text-white text-xl"><span className="font-normal text-white">DFB</span>Dev</h1>
+        <h1 className="my-auto w-24 font-thin text-center text-white sm:text-xl 2xl:text-3xl"><span className="font-normal text-white">DFB</span>Dev</h1>
         <ul className="navOpts flex justify-center justify-between items-center max-w-xlg w-3/5 ml-auto mr-5 font-thin text-white sm:text-xl 2xl:text-3xl">
           <li className="opt" onClick={clickScroll}>About me</li>
           <li className="opt" onClick={clickScroll2}>Skills</li>
@@ -44,7 +44,7 @@ function App() {
         {/* Introduction Section */}
         <figure className="flex w-3/4"><img className="personalImg mt-auto mx-auto" src={require("./Images/Personal.png")}/></figure>
         <article className="flex w-3/4 justify-center items-center flex-col">
-          <p className="introText lg:text-3xl sm:text-xl text-sm">
+          <p className="introText">
             <span className="font-thin">Hello! My name is...</span>
             Donathan Brown.
             <span className="font-thin">I also go by DFBDev or DemDB.</span>
@@ -52,7 +52,7 @@ function App() {
           </p>
           <ul className="persLinks flex w-3/4 h-1/4 justify-center items-center justify-between" ref={skillRef}>
             <li className="indvLinks il1"><a href="https://www.linkedin.com/in/donathan-brown-929255248/" target="_blank"><img src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")}></img></a></li>
-            <li className="indvLinks il2"><a href="https://github.com/DFBDev" target="_blank"><img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img></a></li>
+            <li className="indvLinks il2"><a href="https://github.com/DFBDev" target="_blank"><img className="w-8/12 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img></a></li>
             <li className="indvLinks il3"><a><img className="w-1/2 m-auto" src={require("./Images/resume-and-cv.png")}></img></a></li>
           </ul>
         </article>
@@ -98,7 +98,7 @@ function App() {
           </div>
         </article>
       </section>
-      <section className="flex justify-center items-center flex-col" ref={projRef}>
+      <section className="sec3 flex justify-center items-center flex-col" ref={projRef}>
         {/* Projects Section */}
         <header className="projHead md:text-xl 2xl:text-3xl w-100 font-normal" data-aos="fade-right">
           Recent Projects
