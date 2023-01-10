@@ -74,10 +74,12 @@ header{
    
 }
 .navOpts{
+
 }
 .opt{
     transition:all 0.2s ease-in-out;
     border-bottom-color:#2750b9;
+    max-height:30px;
 }
 .opt:hover{
     transform:scale(1.1);
@@ -143,6 +145,7 @@ header{
     text-align:center;
     max-width:100px;
     min-width:5px;
+    max-height:30px;
     font-size:0.8rem;
     top:100%;
     content: 'LinkedIn Profile';
