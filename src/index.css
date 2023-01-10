@@ -56,8 +56,8 @@
 }
 
 :root {
-    --primary2: #0a132b;
-    --primary1: #0d1a3b;
+    --primary2: #0c1531;
+    --primary1: #101f45;
     --primary3: #572886;
     --border1: #122c6f;
     --border2: #6712AA;
@@ -74,13 +74,17 @@ header{
    
 }
 .navOpts{
-    
 }
 .opt{
     transition:all 0.2s ease-in-out;
+    border-bottom-color:#2750b9;
 }
 .opt:hover{
     transform:scale(1.1);
+    border-bottom-style:solid;
+    border-bottom-width:0.5px;
+    border-bottom-color:#2750b9;
+    padding-bottom:1%;
     @apply text-sky-600;
 }
 .section1{
@@ -115,8 +119,8 @@ header{
     align-items:center;
     width:15%;
     height:90%;
-    max-width:100px;
-    max-height:100px;
+    max-width:75px;
+    max-height:75px;
     border-style:solid;
     border-width:2px;
     border-color:var(--border1);
@@ -143,7 +147,7 @@ header{
     top:100%;
     content: 'LinkedIn Profile';
     position:absolute;
-    color:white;
+    color:rgb(106, 143, 245);
     overflow:visible;
     font-weight:100;
     opacity:0;
@@ -160,7 +164,7 @@ header{
     top:100%;
     content: 'GitHub Profile';
     position:absolute;
-    color:white;
+    color:rgb(106, 143, 245);
     overflow:visible;
     font-weight:100;
     opacity:0;
@@ -177,7 +181,7 @@ header{
     top:100%;
     content: 'Resume';
     position:absolute;
-    color:white;
+    color:rgb(106, 143, 245);
     overflow:visible;
     font-weight:100;
     opacity:0;
@@ -341,7 +345,7 @@ header{
     width:fit-content;
     margin:2%;
     padding:5%;
-    background-color: var(--primary2);
+    background-color: var(--primary1);
 }
 .piHolder{
     display:flex;

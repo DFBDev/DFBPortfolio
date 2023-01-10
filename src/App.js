@@ -32,7 +32,7 @@ function App() {
     <body className="App flex flex-col">
       <nav className="flex w-full h-16">
         {/* Navigation Bar Content */}
-        <h1 className="my-auto ml-4 w-24 font-thin text-center text-white sm:text-xl 2xl:text-3xl"><span className="font-normal text-white">DFB</span>Dev</h1>
+        <h1 className="my-auto lg:ml-4 w-24 font-thin text-center text-white sm:text-xl 2xl:text-3xl"><span className="font-normal text-white">DFB</span>Dev</h1>
         <ul className="navOpts flex justify-center justify-between items-center max-w-xlg w-3/5 ml-auto mr-5 my-auto font-thin text-white sm:text-xl 2xl:text-3xl">
           <li className="opt" onClick={clickScroll}>About me</li>
           <li className="opt" onClick={clickScroll2}>Skills</li>
