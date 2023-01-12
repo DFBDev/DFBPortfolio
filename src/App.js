@@ -42,13 +42,16 @@ function App() {
       </nav>
       <section className="section1 flex w-screen">
         {/* Introduction Section */}
-        <figure className="flex w-3/4"><img className="personalImg mt-auto" src={require("./Images/Personal3.png")}/></figure>
+        <figure className="flex w-3/4"><img className="personalImg my-auto" src={require("./Images/Personal.jpg")}/></figure>
         <article className="flex w-3/4 justify-center items-center flex-col">
           <p className="introText">
-            <span className="font-thin">Hello! My name is...</span>
-            Donathan Brown.
-            <span className="font-thin">I also go by DFBDev or DemDB.</span>
-            I'm a Front-end Developer!
+            <span className="font-thin">I'm Donathan Brown.</span>
+              Front-end React Developer.
+            <span className="introP font-thin">
+              I'm a 21 year old, self-taught Web Developer with a background in college-level Computer Science. 
+              From coordinating Backend processes through a BaaS, to creating a dynamic Front-end 
+              architecture; I'm passionate about all things tech and web!
+              </span>
           </p>
           <ul className="persLinks flex w-3/4 h-1/4 justify-center items-center justify-between" ref={skillRef}>
             <li className="indvLinks il1"><a href="https://www.linkedin.com/in/donathan-brown-929255248/" target="_blank"><img src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")}></img></a></li>

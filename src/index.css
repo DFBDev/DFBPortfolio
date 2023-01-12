@@ -94,10 +94,14 @@ header{
     min-height:150px;
 }
 .personalImg{
-    height:30vw;
+    height:25vw;
     max-height:650px;
+    aspect-ratio: 1/1;
     margin-left:auto;
+    margin-right:20%;
+    border-radius:110%;
     transition:all 0.3s ease-in-out;
+    animation: bounce 1s infinite;
 }
 .introText{
     display:flex;
@@ -112,7 +116,12 @@ header{
     color:white;
     line-height:1.5;
 }
+.introP{
+    width:95%;
+    font-size:1.2vw;
+}
 .persLinks{
+    width:80%;
     transform:translateY(3.4vw);
 }
 .indvLinks{
