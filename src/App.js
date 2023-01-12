@@ -46,7 +46,7 @@ function App() {
         <article className="flex w-3/4 justify-center items-center flex-col">
           <p className="introText">
             <span className="font-thin">I'm Donathan Brown.</span>
-              Front-end React Developer.
+            Front-end React Developer.
             <span className="introP font-thin">
               I'm a 21 year old, self-taught Web Developer with a background in college-level Computer Science. 
               From coordinating Backend processes through a BaaS, to creating a dynamic Front-end 

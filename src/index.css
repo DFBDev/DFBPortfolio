@@ -95,13 +95,12 @@ header{
 }
 .personalImg{
     height:25vw;
+    width:30vw;
     max-height:650px;
-    aspect-ratio: 1/1;
     margin-left:auto;
-    margin-right:20%;
-    border-radius:110%;
+    margin-right:15%;
+    border-radius:100px;
     transition:all 0.3s ease-in-out;
-    animation: bounce 1s infinite;
 }
 .introText{
     display:flex;
