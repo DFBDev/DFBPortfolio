@@ -64,40 +64,114 @@ function App() {
         {/* Skills Section */}
         <header className="skillsHeader flex flex-col text-white my-5">
           <span className="font-normal md:text-xl 2xl:text-3xl">Skills/Expertise</span>
-          <span className="font-thin md:text-lg 2xl:text-xl text-xs">Click for Photo Credits</span>
+          <span className="font-thin md:text-lg 2xl:text-xl text-xs">Hover for Photo Credits</span>
         </header>
         <article className="ssHolder flex flex-wrap justify-center items-center justify-around mb-5">
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1000">
-            <figure><img className="ssImg" src={require("./Images/html.png")}></img></figure>
-            <figcaption className="ssCap">HTML</figcaption>
+            <div className="cardInner">
+              <div className="cardFront">
+                <figure><img className="ssImg" src={require("./Images/html.png")}></img></figure>
+                <figcaption className="ssCap flex justify-center">HTML</figcaption>
+              </div>
+              <div className="cardBack">
+                <h2 className="pb-1">Image by Freepik</h2>
+                <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/html_1051277?term=html&page=1&position=2&origin=search&related_id=1051277">
+                  View Source
+                </a>
+              </div>
+            </div>
           </div>
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1250">
-            <figure><img className="ssImg" src={require("./Images/css-3.png")}></img></figure>
-            <figcaption className="ssCap">CSS</figcaption>
+          <div className="cardInner">
+              <div className="cardFront">
+                <figure><img className="ssImg" src={require("./Images/css-3.png")}></img></figure>
+                <figcaption className="ssCap flex justify-center">CSS</figcaption>
+              </div>
+              <div className="cardBack">
+                <h2 className="pb-1">Image by Pixel Perfect</h2>
+                <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/css-3_732190?term=css&page=1&position=2&origin=search&related_id=732190">
+                  View Source
+                </a>
+              </div>
+            </div>
           </div>
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1500">
-            <figure><img className="ssImg" src={require("./Images/js.png")}></img></figure>
-            <figcaption className="ssCap">Javascript</figcaption>
+          <div className="cardInner">
+              <div className="cardFront">
+                <figure><img className="ssImg" src={require("./Images/js.png")}></img></figure>
+                <figcaption className="ssCap flex justify-center">Javascript</figcaption>
+              </div>
+              <div className="cardBack">
+                <h2 className="pb-1">Image by Freepik</h2>
+                <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/js_5968292?term=javascript&page=1&position=4&origin=search&related_id=5968292">
+                  View Source
+                </a>
+              </div>
+            </div>
           </div>
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1750">
-            <figure><img className="ssImg" src={require("./Images/1174949_js_react js_logo_react_react native_icon.png")}></img></figure>
-            <figcaption className="ssCap">React.js</figcaption>
+          <div className="cardInner">
+              <div className="cardFront">
+                <figure><img className="ssImg" src={require("./Images/1174949_js_react js_logo_react_react native_icon.png")}></img></figure>
+                <figcaption className="ssCap flex justify-center">React.js</figcaption>
+              </div>
+              <div className="cardBack">
+                Testing
+              </div>
+            </div>
           </div>
           <div className="skillSlot" data-aos="fade-left" data-aos-duration="1000">
-            <figure><img className="ssImg" src={require("./Images/node-js.png")}></img></figure>
-            <figcaption className="ssCap">Node.js</figcaption>
+          <div className="cardInner">
+              <div className="cardFront">
+                <figure><img className="ssImg" src={require("./Images/node-js.png")}></img></figure>
+                <figcaption className="ssCap flex justify-center">Node.js</figcaption>
+              </div>
+              <div className="cardBack">
+                <h2 className="pb-1">Image by Freepik</h2>
+                <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/node-js_5968322?term=node&page=1&position=1&origin=search&related_id=5968322">
+                  View Source
+                </a>
+              </div>
+            </div>
           </div>
           <div className="skillSlot" data-aos="fade-left" data-aos-duration="1250">
-            <figure><img className="ssImg" src={require("./Images/server (1).png")}></img></figure>
-            <figcaption className="ssCap">Firebase/BaaS</figcaption>
+          <div className="cardInner">
+              <div className="cardFront">
+                <figure><img className="ssImg" src={require("./Images/server (1).png")}></img></figure>
+                <figcaption className="ssCap flex justify-center">Firebase/BaaS</figcaption>
+              </div>
+              <div className="cardBack">
+                <h2 className="pb-1">Image by Freepik</h2>
+                <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/server_689319?term=database&page=1&position=13&origin=search&related_id=689319">
+                  View Source
+                </a>
+              </div>
+            </div>
           </div>
           <div className="skillSlot" data-aos="fade-left" data-aos-duration="1500">
-            <figure><img className="ssImg" src={require("./Images/figma.png")}></img></figure>
-            <figcaption className="ssCap">Figma/UI Design</figcaption>
+          <div className="cardInner">
+              <div className="cardFront">
+                <figure><img className="ssImg" src={require("./Images/figma.png")}></img></figure>
+                <figcaption className="ssCap flex justify-center">Figma</figcaption>
+              </div>
+              <div className="cardBack">
+                <h2 className="pb-1">Image by Freepik</h2>
+                <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/figma_5968705?term=figma&page=1&position=2&origin=search&related_id=5968705">
+                  View Source
+                </a>
+              </div>
+            </div>
           </div>
           <div className="skillSlot" data-aos="fade-left" data-aos-duration="1750">
-            <figure><img className="imgSpec" src={require("./Images/tailwind-css-icon.png")}></img></figure>
-            <figcaption className="ssCap">Tailwind</figcaption> 
+          <div className="cardInner">
+              <div className="cardFront">
+                <figure><img className="ssImg" src={require("./Images/tailwind-css-icon.png")}></img></figure>
+                <figcaption className="ssCap flex justify-center">Tailwind</figcaption>
+              </div>
+              <div className="cardBack">
+                testing
+              </div>
+            </div>
           </div>
         </article>
       </section>

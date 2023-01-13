@@ -224,10 +224,38 @@ header{
     height:17vw;
     max-width:150px;
     max-height:150px;
-    background-color: var(--primary1);
     margin:2%;
     color:White;
     border-radius:15%;
+    perspective:1000px;
+}
+.cardInner{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    width:17vw;
+    height:17vw;
+    max-width:150px;
+    max-height:150px;
+    border-radius:15%;
+    position:relative;
+    transition:transform 1s;
+    background-color: var(--primary1);
+    transform-style: preserve-3d;
+}
+.cardFront{
+    position:absolute;
+    backface-visibility: hidden;
+}
+.cardBack{
+    position:absolute;
+    backface-visibility: hidden;
+    transform:rotateY(180deg);
+    text-align:center
+}
+.skillSlot:hover .cardInner{
+    transform:rotateY(180deg);
 }
 .ssImg{
     width:40%;
@@ -243,6 +271,7 @@ header{
 }
 .sec3{
     padding-bottom:3%;
+    overflow:hidden;
 }
 .psContainer{
     max-width:1200px;
