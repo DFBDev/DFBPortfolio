@@ -134,6 +134,7 @@ header{
     border-style:solid;
     border-width:2px;
     border-color:var(--border1);
+    border-radius:8px;
     background-color: rgb(15, 15, 15, 0.2);
     transition: all 0.3s ease-in-out;
 }
@@ -493,4 +494,7 @@ footer{
     height:8vh;
     color:#122f5a;
     font-size:0.7em;
+}
+.footCredits{
+    margin-top:0.8%;
 }

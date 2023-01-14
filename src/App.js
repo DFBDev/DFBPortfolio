@@ -54,9 +54,21 @@ function App() {
               </span>
           </p>
           <ul className="persLinks flex w-3/4 h-1/4 justify-center items-center justify-between" ref={skillRef}>
-            <li className="indvLinks il1"><a href="https://www.linkedin.com/in/donathan-brown-929255248/" target="_blank"><img src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")}></img></a></li>
-            <li className="indvLinks il2"><a href="https://github.com/DFBDev" target="_blank"><img className="w-8/12 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img></a></li>
-            <li className="indvLinks il3"><a><img className="w-1/2 m-auto" src={require("./Images/resume-and-cv.png")}></img></a></li>
+            <li className="indvLinks il1">
+              <a href="https://www.linkedin.com/in/donathan-brown-929255248/" target="_blank">
+                <img src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")}></img>
+              </a>
+            </li>
+            <li className="indvLinks il2">
+              <a href="https://github.com/DFBDev" target="_blank">
+                <img className="w-8/12 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
+              </a>
+            </li>
+            <li className="indvLinks il3">
+              <a>
+                <img className="w-1/2 m-auto" src={require("./Images/resume-and-cv.png")}></img>
+              </a>
+            </li>
           </ul>
         </article>
       </section>
@@ -73,7 +85,7 @@ function App() {
                 <figure><img className="ssImg" src={require("./Images/html.png")}></img></figure>
                 <figcaption className="ssCap flex justify-center">HTML</figcaption>
               </div>
-              <div className="cardBack">
+              <div className="cardBack md:text-base text-xs">
                 <h2 className="pb-1">Image by Freepik</h2>
                 <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/html_1051277?term=html&page=1&position=2&origin=search&related_id=1051277">
                   View Source
@@ -87,7 +99,7 @@ function App() {
                 <figure><img className="ssImg" src={require("./Images/css-3.png")}></img></figure>
                 <figcaption className="ssCap flex justify-center">CSS</figcaption>
               </div>
-              <div className="cardBack">
+              <div className="cardBack md:text-base text-xs">
                 <h2 className="pb-1">Image by Pixel Perfect</h2>
                 <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/css-3_732190?term=css&page=1&position=2&origin=search&related_id=732190">
                   View Source
@@ -101,7 +113,7 @@ function App() {
                 <figure><img className="ssImg" src={require("./Images/js.png")}></img></figure>
                 <figcaption className="ssCap flex justify-center">Javascript</figcaption>
               </div>
-              <div className="cardBack">
+              <div className="cardBack md:text-base text-xs">
                 <h2 className="pb-1">Image by Freepik</h2>
                 <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/js_5968292?term=javascript&page=1&position=4&origin=search&related_id=5968292">
                   View Source
@@ -115,7 +127,7 @@ function App() {
                 <figure><img className="ssImg" src={require("./Images/1174949_js_react js_logo_react_react native_icon.png")}></img></figure>
                 <figcaption className="ssCap flex justify-center">React.js</figcaption>
               </div>
-              <div className="cardBack">
+              <div className="cardBack md:text-base text-xs">
                 Testing
               </div>
             </div>
@@ -126,7 +138,7 @@ function App() {
                 <figure><img className="ssImg" src={require("./Images/node-js.png")}></img></figure>
                 <figcaption className="ssCap flex justify-center">Node.js</figcaption>
               </div>
-              <div className="cardBack">
+              <div className="cardBack md:text-base text-xs">
                 <h2 className="pb-1">Image by Freepik</h2>
                 <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/node-js_5968322?term=node&page=1&position=1&origin=search&related_id=5968322">
                   View Source
@@ -140,7 +152,7 @@ function App() {
                 <figure><img className="ssImg" src={require("./Images/server (1).png")}></img></figure>
                 <figcaption className="ssCap flex justify-center">Firebase/BaaS</figcaption>
               </div>
-              <div className="cardBack">
+              <div className="cardBack md:text-base text-xs">
                 <h2 className="pb-1">Image by Freepik</h2>
                 <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/server_689319?term=database&page=1&position=13&origin=search&related_id=689319">
                   View Source
@@ -154,7 +166,7 @@ function App() {
                 <figure><img className="ssImg" src={require("./Images/figma.png")}></img></figure>
                 <figcaption className="ssCap flex justify-center">Figma</figcaption>
               </div>
-              <div className="cardBack">
+              <div className="cardBack md:text-base text-xs">
                 <h2 className="pb-1">Image by Freepik</h2>
                 <a className="text-sky-500 font-thin" href="https://www.flaticon.com/free-icon/figma_5968705?term=figma&page=1&position=2&origin=search&related_id=5968705">
                   View Source
@@ -168,7 +180,7 @@ function App() {
                 <figure><img className="ssImg" src={require("./Images/tailwind-css-icon.png")}></img></figure>
                 <figcaption className="ssCap flex justify-center">Tailwind</figcaption>
               </div>
-              <div className="cardBack">
+              <div className="cardBack md:text-base text-xs">
                 testing
               </div>
             </div>
@@ -330,12 +342,12 @@ function App() {
       </section>
       <footer className="flex justify-center items-center md:text-lg text-sm flex-col">
         <div className="footExtension">
-          Made with<span className="hover:text-purple-500 transition ease-in-out">&nbsp;ReactJS</span>, 
-          <span className="hover:text-purple-500 transition ease-in-out">&nbsp;Tailwind</span>, 
-          and <span className="hover:text-purple-500 transition ease-in-out">&nbsp;AOS {"(michalsnik)"}</span>. 
-          Hosted by <span className="hover:text-purple-500 transition ease-in-out">&nbsp;GitHub Pages</span>.
+          Made with ReactJS, Tailwind and AOS {"(michalsnik)"}. Hosted by GitHub Pages.
         </div>
-        <p className="flex-auto py-3">Developed/Designed by © DFBDev</p>
+        <p className="footCredits md:text-lg text-sm">
+          <a className="hover:text-sky-600 transition ease-in-out" href="https://www.iconfinder.com/icons/2329259/linkedin_linkedin_logo_logo_icon" target="_blank">LinkedIn Photo</a> · <a className="hover:text-sky-600 transition ease-in-out" href="https://github.com/logos" target="_blank">GitHub Photo</a> · <a className="hover:text-sky-600 transition ease-in-out" href="https://www.flaticon.com/free-icon/resume-and-cv_3415056?term=resume+and+cv&page=1&position=32&origin=search&related_id=3415056" target="_blank">Document Photo</a> · <a className="hover:text-sky-600 transition ease-in-out" href="https://www.freepik.com/free-vector/abstract-fluid-neon-color-3d-effect-business-background-banner-design-multipurpose_23369553.htm#query=abstract%20dark%20blue%20background&position=4&from_view=search&track=ais" target="_blank">Background Photo</a>
+        </p>
+        <p className="flex-auto text-sm">Developed/Designed by © DFBDev</p>
       </footer>
     </body>
   );
