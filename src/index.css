@@ -55,43 +55,48 @@
     }
 }
 
+html, body {
+    max-width:100%;
+    overflow-x: hidden;
+}
 :root {
-    --primary2: #0c1531;
-    --primary1: #101f45;
+    --primary2: #091026;
+    --primary1: #0d1a39;
     --primary3: #572886;
-    --border1: #122c6f;
-    --border2: #6712AA;
-    --circleBorder: #193d96;
+    --border1: #89043D;
+    --border2: #090e29;
+    --circleBorder: #122b6b;
     --exitColor: #9B3AE8;
 }
 .App{
-    overflow:hidden;
-    background-color: var(--primary1);
-    background-image: url("./Images/33.jpg");
-    background-size:cover;
+    background-color: var(--primary2);
 }
-header{
-   
+nav{
+    background-color: var(--primary2);
+    position:fixed;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    z-index:3;
 }
-.navOpts{
-
+.dfb, .navNum{
+    color:var(--border1);
 }
 .opt{
     transition:all 0.2s ease-in-out;
-    border-bottom-color:#2750b9;
+    border-bottom-color:var(--border1);
     max-height:30px;
+    color:rgb(165, 165, 165);
 }
 .opt:hover{
     transform:scale(1.1);
     border-bottom-style:solid;
     border-bottom-width:0.5px;
-    border-bottom-color:#2750b9;
-    padding-bottom:1%;
-    @apply text-sky-600;
+    border-bottom-color:var(--border1);
+    padding-bottom:4%;
+    color:white;
 }
 .section1{
-    height:35vw;
-    min-height:150px;
+    height:55vw;
+    min-height:350px;
 }
 .personalImg{
     height:25vw;
@@ -99,7 +104,7 @@ header{
     max-height:650px;
     margin-left:auto;
     margin-right:15%;
-    border-radius:100px;
+    border-radius:60px;
     transition:all 0.3s ease-in-out;
 }
 .introText{
@@ -108,11 +113,11 @@ header{
     align-items:left;
     flex-direction:column;
     margin-left:5%;
-    margin-top:15%;
-    height:30vw;
+    margin-top:8%;
+    height:16vw;
     width:80%;
     font-size:2.5vw;
-    color:white;
+    color:rgb(165, 165, 165);
     line-height:1.5;
 }
 .introP{
@@ -120,17 +125,17 @@ header{
     font-size:1.2vw;
 }
 .persLinks{
-    width:80%;
-    transform:translateY(3.4vw);
+    width:75%;
 }
 .indvLinks{
     display:flex;
     justify-content:center;
     align-items:center;
-    width:15%;
-    height:90%;
-    max-width:75px;
-    max-height:75px;
+    width:18%;
+    height:50%;
+    max-width:65px;
+    min-width:40px;
+    max-height:65px;
     border-style:solid;
     border-width:2px;
     border-color:var(--border1);
@@ -138,8 +143,14 @@ header{
     background-color: rgb(15, 15, 15, 0.2);
     transition: all 0.3s ease-in-out;
 }
+.ilIMG{
+    transition:all 0.3s ease-in-out;
+}
+.indvLinks:hover .ilIMG{
+    opacity:0;
+}
 .il1:hover, .il2:hover, .il3:hover{
-    border-color:rgb(26, 78, 189)
+    border-color:rgb(205, 31, 101);
 }
 .il1:hover::after, .il2:hover::after, .il3:hover::after {
     opacity:1;
@@ -152,18 +163,18 @@ header{
     width:14%;
     justify-content:center;
     text-align:center;
-    max-width:100px;
+    max-width:80px;
     min-width:5px;
-    max-height:30px;
+    max-height:40px;
     font-size:0.8rem;
-    top:100%;
     content: 'LinkedIn Profile';
     position:absolute;
-    color:rgb(106, 143, 245);
+    color:rgb(238, 75, 140);
     overflow:visible;
     font-weight:100;
     opacity:0;
     animation: slideUp 0.3s ease-in-out;
+    pointer-events: none;
 }
 .il2::after{
     display:flex;
@@ -173,14 +184,14 @@ header{
     max-width:66px;
     min-width:12px;
     font-size:0.8rem;
-    top:100%;
     content: 'GitHub Profile';
     position:absolute;
-    color:rgb(106, 143, 245);
+    color:rgb(238, 75, 140);
     overflow:visible;
     font-weight:100;
     opacity:0;
     animation: slideUp 0.3s ease-in-out;
+    pointer-events: none;
 }
 .il3::after{
     display:flex;
@@ -190,18 +201,27 @@ header{
     max-width:100px;
     min-width:20px;
     font-size:0.8rem;
-    top:100%;
     content: 'Resume';
     position:absolute;
-    color:rgb(106, 143, 245);
+    color:rgb(238, 75, 140);
     overflow:visible;
     font-weight:100;
     opacity:0;
     animation: slideUp 0.3s ease-in-out;
+    pointer-events: none;
 }
 .section2{
     background-color: var(--primary2);
     padding-bottom:5%;
+}
+.headNum{
+    color:var(--border1);
+}
+.headAcc{
+    align-self: center;
+    height:2px;
+    width:10%;
+    background-color: rgb(20, 35, 76);
 }
 .ssHolder{
     margin-left:auto;
@@ -211,10 +231,10 @@ header{
 .skillsHeader{
     width:94%;
     max-width:1105px;
-    margin-top:4%;
-    margin-left:3%;
+    margin-left:auto;
     margin-right:auto;
-    padding-bottom:1%;
+    padding-top:5%;
+    padding-bottom:5%;
 }
 .skillSlot{
     display:flex;
@@ -239,11 +259,10 @@ header{
     height:17vw;
     max-width:150px;
     max-height:150px;
-    border-radius:15%;
     position:relative;
     transition:transform 1s;
-    background-color: var(--primary1);
     transform-style: preserve-3d;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 }
 .cardFront{
     position:absolute;
@@ -271,7 +290,6 @@ header{
     font-size:1.4vw;
 }
 .sec3{
-    padding-bottom:3%;
     overflow:hidden;
 }
 .psContainer{
@@ -291,11 +309,15 @@ header{
     max-width:800px;
 }
 .projHead{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     width:94%;
-    padding-top:3%;
-    padding-bottom:1%;
+    max-width:1105px;
+    padding-top:14%;
+    padding-bottom:4%;
     margin-right:auto;
-    margin-left:3%;
+    margin-left:auto;
     color:white;
     font-size:2.5vw;
 }
@@ -305,7 +327,7 @@ header{
     max-width:200px;
     max-height:250px;
     border-radius:5%;
-    background-color: var(--primary2);
+    background-color: var(--border2);
     transition:all 0.3s ease-in-out;
 }
 .projHolderUno{
@@ -314,7 +336,7 @@ header{
     max-width:200px;
     max-height:250px;
     border-radius:5%;
-    background-color: var(--primary2);
+    background-color: var(--border2);
     transition:all 0.3s ease-in-out;
 }
 .projHolder:hover .projImg, .projHolderUno:hover .projImg{
@@ -327,7 +349,6 @@ header{
     content:"Visit Site";
     position: absolute;
     width:100%;
-    top:1%;
     height:100%;
     border-radius:8px;
     background-color: rgb(26, 26, 26, 0.6);
@@ -346,9 +367,11 @@ header{
     justify-content:center;
     align-items:center;
     width:80%;
-    height:30%;
+    height:45%;
+    max-height:140px;
     margin-top:15%;
-
+    border-radius:12px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
 }
 .projTitle{
     display:flex;
@@ -409,35 +432,32 @@ header{
     transition:all 0.3s ease-in-out;
 }
 .aboutSec{
-    height:45vw;
-    max-height:600px;
+    height:65vw;
+    padding-top:14%;
+    max-height:700px;
     background-color: var(--primary2);
 }
-.aboutCircle{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:10vw;
-    width:10vw;
-    max-width:170px;
-    max-height:170px;
-    border-radius:100%;
-    border-style:solid;
-    border-color: var(--circleBorder);
-    border-width:2px;
-    background-color: var(--primary1);
-    overflow:visible;
-}
 .aboutHeader{
-    position:absolute;
+    color:rgb(165, 165, 165);
 }
 .aboutBox{
-    width:90%;
-    height:25%;
-    max-width:300px;
-    max-height:120px;
-    background-color:var(--primary1);
+    width:70%;
+    height:46%;
+    max-width:200px;
+    max-height:300px;
+    border-color:var(--border1);
     border-radius:8px;
+    border-width:1px;
+    transition:all 0.5s ease-in-out !important;
+}
+.aboutBox:hover {
+    background-color: var(--border1);
+}
+.aboutBox:hover .abName, .aboutBox:hover .abDesc{
+    color: var(--primary1);
+}
+.aboutBox:hover .indvDot{
+    background-color: var(--primary1);
 }
 .abName{
     display:flex;
@@ -445,20 +465,24 @@ header{
     width:fit-content;
     font-weight:300;
     margin-left:10%;
+    transition:all 0.5s ease-in-out !important;
 }
 .abTopHalf{
     display:flex;
     height:55%;
+    color:rgb(165, 165, 165);
 }
 .abBotHalf{
     display:flex;
     height:45%;
     font-size:1.5vw;
     font-weight:100;
+    color:rgb(165, 165, 165);
 }
 .abDesc{
     width:auto;
     margin-left:10%;
+    transition:all 0.5s ease-in-out !important;
 }
 .dots{
     display:flex;
@@ -470,29 +494,31 @@ header{
     margin-left:auto;
 }
 .indvDot{
-    width:1vw;
-    height:1vw;
-    background-color: #1e2586;
+    width:0.8vw;
+    height:0.8vw;
+    background-color: #6e1c44;
     border-radius:100%;
     margin-top:10%;
-    max-width:10px;
-    max-height:10px;
+    max-width:8px;
+    max-height:8px;
+    transition:all 0.5s ease-in-out !important;
 }
 footer{
-    color:#122f5a;
-    background-color: var(--primary1);
-    padding-bottom:6%;
+    color:#0d2242;
+    background-color: var(--primary2);
+    padding-bottom:15%;
     max-height:400px;
 }
 .footExtension{
     display:flex;
-    padding-top:10%;
+    padding-top:15%;
+    padding-bottom:4px;
     justify-content:center;
     align-items:center;
-    background-color: var(--primary1);
+    background-color: var(--primary2);
     width:100%;
     height:8vh;
-    color:#122f5a;
+    color:#0d2242;
     font-size:0.7em;
 }
 .footCredits{
