@@ -29,7 +29,7 @@ function App() {
   }, []);
 
   return (
-    <body className="App flex flex-col">
+    <main className="App flex flex-col">
       <nav className="flex w-screen h-16">
         {/* Navigation Bar Content */}
         <h1 className="my-auto lg:ml-4 w-24 font-thin text-center text-white sm:text-xl 2xl:text-3xl text-neutral-400"><span className="dfb font-normal text-white">DFB</span>Dev</h1>
@@ -387,7 +387,7 @@ function App() {
         </p>
         <p className="flex-auto md:text-sm text-xs">Developed/Designed by © DFBDev</p>
       </footer>
-    </body>
+    </main>
   );
 }
 

@@ -3,6 +3,8 @@
 @tailwind utilities;
 
 /* CSS cases where Tailwind would be more inefficent to implement (given my current experience) are below */
+
+/* Breakpoint Section */
 @media screen and (min-width: 1536px) {
     .personalImg{
         max-height:550px !important;
@@ -32,7 +34,73 @@
         font-size:1vw !important;
     }
 }
+@media screen and (max-width: 767px){
+    .section1{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        padding-top:30vw;
+        min-height:800px !important;
+    }
+    .personalImg{
+        margin-left:auto !important;
+        margin-right:auto !important;
+        margin-bottom:30%;
+        height:35vw !important;
+        width:35vw !important;
+        border-radius:100% !important;
+    }
+    .persLinks{
 
+    }
+    .indvLinks{
+        height:120% !important;
+    }
+    .introText{
+        margin-left:auto !important;
+        margin-right:auto !important;
+        text-align: center;
+        width:98% !important;
+        font-size:3vw !important;
+    }
+    .introP{
+        font-size:2.5vw !important;
+        padding-bottom:50%;
+    }
+    .section2{
+        padding-top:15%;
+    }
+    .ssHolder{
+        max-width:200px !important;
+    }
+    .sec3{
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+    .psContainer{
+        height:60vh;
+        padding-top:10%;
+        max-width:200px !important;
+        flex-wrap:wrap !important;
+    }
+    .projHolder{
+        min-width:80px;
+    }
+    .projTitleHolder{
+        min-width:80px;
+    }
+    .aboutSec{
+        height:60vh !important;
+        padding-top:20%;
+        padding-bottom:20%;
+    }
+    .aboutBox{
+        max-height:125px !important;
+    }
+}
+/* Breakpoint End */
+
+/* Animation Section */
 @keyframes slideUp {
     0%{
         transform:translateY(0%);
@@ -54,10 +122,11 @@
         opacity:1;
     }
 }
+/* Animation End*/
 
-html, body {
-    max-width:100%;
-    overflow-x: hidden;
+html {
+    overflow-x:hidden;
+    background-color: aqua;
 }
 :root {
     --primary2: #091026;
@@ -69,6 +138,7 @@ html, body {
     --exitColor: #9B3AE8;
 }
 .App{
+    overflow-x: hidden;
     background-color: var(--primary2);
 }
 nav{
@@ -290,10 +360,10 @@ nav{
     font-size:1.4vw;
 }
 .sec3{
-    overflow:hidden;
+    width:100%;
 }
 .psContainer{
-    max-width:1200px;
+    max-width:1000px;
 }
 .projSec{
     display:flex;
@@ -322,6 +392,7 @@ nav{
     font-size:2.5vw;
 }
 .projHolder{
+    position:relative;
     width:80%;
     height:55%;
     max-width:200px;
@@ -331,6 +402,7 @@ nav{
     transition:all 0.3s ease-in-out;
 }
 .projHolderUno{
+    position:relative;
     width:80%;
     height:55%;
     max-width:200px;
