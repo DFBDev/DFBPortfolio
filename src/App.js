@@ -225,6 +225,11 @@ function App() {
                 <li className="tlSlot">Firebase/API</li>
               </ul>
             </div>
+            <div className="repoLink">
+              <a href="https://github.com/DFBDev/Messaging-App" target="_blank">
+                <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
+              </a>
+            </div>
           </div>
         </div>
         <div className="projSec">
@@ -239,6 +244,11 @@ function App() {
                 <li className="tlSlot">CSS</li>
                 <li className="tlSlot">Template Showcase</li>
               </ul>
+            </div>
+            <div className="repoLink">
+              <a href="https://github.com/DFBDev/SignUpForm" target="_blank">
+                <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
+              </a>
             </div>
           </div>
         </div>
@@ -256,6 +266,11 @@ function App() {
                 <li className="tlSlot">Node.js</li>
               </ul>
             </div>
+            <div className="repoLink">
+              <a href="https://github.com/DFBDev/React-Calculator" target="_blank">
+                <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
+              </a>
+            </div>
           </div>
         </div>
         <div className="projSec">
@@ -272,6 +287,11 @@ function App() {
                 <li className="tlSlot">Node.js</li>
                 <li className="tlSlot">In Progress</li>
               </ul>
+            </div>
+            <div className="repoLink">
+              <a href="https://github.com/DFBDev/eCommerce" target="_blank">
+                <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
+              </a>
             </div>
           </div>
         </div>
