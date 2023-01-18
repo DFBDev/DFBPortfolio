@@ -45,13 +45,13 @@ function App() {
         <figure className="flex w-3/4"><img className="personalImg my-auto" src={require("./Images/Personalmain.jpg")}/></figure>
         <article className="flex w-3/4 justify-center items-center flex-col">
           <p className="introText">
-            <span className="font-thin">I'm Donathan Brown.</span>
-            Front-end React Developer.
+            <span className="sm:font-thin font-normal">I'm Donathan Brown.</span>
+            <span className="mb-1.5 text-pink-800">Front-end React Developer.</span>
             <span className="introP font-thin">
               I'm a 21 year old, self-taught Web Developer with a background in college-level Computer Science. 
-              From coordinating Backend processes through a BaaS, to creating a dynamic Front-end 
+              From coordinating Backend processes within a BaaS, to creating a dynamic Front-end 
               architecture; I'm passionate about all things tech and web!
-              </span>
+            </span>
           </p>
           <ul className="persLinks flex w-3/4 h-1/4 justify-center items-center justify-between">
             <li className="indvLinks il1">
@@ -279,7 +279,7 @@ function App() {
           </div>
           <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
             <div className="projTitle">
-            <h1 className="pT text-neutral-400">EmissaryConnect</h1>
+            <h1 className="pT text-neutral-400">EC</h1>
               <ul className="toolsList text-neutral-400">
                 <li className="tlSlot">HTML</li>
                 <li className="tlSlot">CSS</li>

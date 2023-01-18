@@ -72,6 +72,9 @@
     .ssHolder{
         max-width:200px !important;
     }
+    .ssCap{
+        font-size:2vw !important;
+    }
     .sec3{
         padding-top:20%;
         padding-bottom:20%;
@@ -79,14 +82,20 @@
     .psContainer{
         height:60vh;
         padding-top:10%;
-        max-width:200px !important;
+        max-width:250px !important;
         flex-wrap:wrap !important;
     }
     .projHolder{
         min-width:80px;
     }
+    .projHolderUno{
+        margin-right:5%;
+    }
     .projTitleHolder{
-        min-width:80px;
+        min-width:100px;
+    }
+    .toolsList{
+        font-size:0.3rem !important;
     }
     .aboutSec{
         height:60vh !important;
@@ -187,11 +196,11 @@ nav{
     width:80%;
     font-size:2.5vw;
     color:rgb(165, 165, 165);
-    line-height:1.5;
 }
 .introP{
     width:95%;
     font-size:1.2vw;
+    font-family:'didot';
 }
 .persLinks{
     width:75%;
@@ -357,6 +366,8 @@ nav{
 .ssCap{
     @apply font-thin;
     font-size:1.4vw;
+    font-family:'didot';
+    color:rgb(203, 203, 203)
 }
 .sec3{
     width:100%;
@@ -396,6 +407,8 @@ nav{
     height:55%;
     max-width:200px;
     max-height:250px;
+    min-width:100px;
+    min-height:50px;
     border-radius:5%;
     background-color: var(--border2);
     transition:all 0.3s ease-in-out;
@@ -406,6 +419,8 @@ nav{
     height:55%;
     max-width:200px;
     max-height:250px;
+    min-width:100px;
+    min-height:50px;
     border-radius:5%;
     background-color: var(--border2);
     transition:all 0.3s ease-in-out;
@@ -475,6 +490,7 @@ nav{
     border-bottom-color: var(--border1);
     padding-bottom:50%;
     max-width:200px;
+    font-family:'didot';
 }
 .toolsList{
     display:flex;
@@ -530,6 +546,7 @@ nav{
     border-color:var(--border1);
     border-radius:8px;
     border-width:1px;
+    
     transition:all 0.5s ease-in-out !important;
 }
 .aboutBox:hover {
