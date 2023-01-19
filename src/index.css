@@ -34,7 +34,7 @@
         font-size:1vw !important;
     }
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 507px){
     .section1{
         flex-direction:column;
         justify-content:center;
@@ -65,6 +65,8 @@
     .introP{
         font-size:2.5vw !important;
         padding-bottom:50%;
+        margin-left:auto;
+        margin-right:auto;
     }
     .section2{
         padding-top:15%;
@@ -77,7 +79,8 @@
     }
     .sec3{
         padding-top:20%;
-        padding-bottom:20%;
+        padding-bottom:15%;
+        max-height:800px;
     }
     .psContainer{
         height:60vh;
@@ -98,12 +101,18 @@
         font-size:0.3rem !important;
     }
     .aboutSec{
-        height:60vh !important;
-        padding-top:20%;
-        padding-bottom:20%;
+        height:75vh !important;
+        padding-bottom:10%;
+        flex-direction:column !important;
     }
     .aboutBox{
         max-height:125px !important;
+        min-height:100px !important;
+        margin-left:5%;
+        margin-right:5%;
+    }
+    .indvAS{
+        flex-direction:row !important;
     }
 }
 /* Breakpoint End */
@@ -546,7 +555,6 @@ nav{
     border-color:var(--border1);
     border-radius:8px;
     border-width:1px;
-    
     transition:all 0.5s ease-in-out !important;
 }
 .aboutBox:hover {

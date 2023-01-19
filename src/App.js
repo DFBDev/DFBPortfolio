@@ -1,6 +1,8 @@
 import AOS from "aos";
 import 'aos/dist/aos.css';
-import { useEffect, useRef } from "react";
+import { AnimatePresence } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
+import { AboutReturn } from "./comps";
 
 //Main body application, components can be found in comps.js.
 //Elements are stylized by a mixture of Tailwind and Vanilla CSS (whichever is circumstantially easier).
@@ -9,6 +11,7 @@ function App() {
   const aboutRef = useRef(null);
   const skillRef = useRef(null);
   const projRef = useRef(null);
+  const [abtState, setAS] = useState("default");
 
   const clickScroll = () => {
     aboutRef.current?.scrollIntoView({behavior: 'smooth'});
@@ -21,6 +24,15 @@ function App() {
   const clickScroll3 = () => {
     projRef.current?.scrollIntoView({behavior: 'smooth'});
   }
+
+  const abtClickHandle = (choice) => {
+    if (choice != abtState){
+      setAS(choice);
+    }
+    else {
+      setAS("default");
+    }
+  } 
 
   {/* Animation initializer for scrolling animations using AOS library */}
 
@@ -298,13 +310,13 @@ function App() {
         </article>
       </section>
       <section className="aboutSec flex justify-center items-center text-white" ref={aboutRef}>
-        <article className="flex flex-auto h-full justify-center items-center flex-col justify-around">
+        <article className="indvAS flex flex-auto h-full justify-center items-center flex-col justify-around">
           <div className="aboutBox ml-auto" data-aos="fade">
             <div className="abTopHalf">
               <div className="abName md:text-lg text-sm">
                 Other Skills
               </div>
-              <div className="dots">
+              <div className="dots" onClick={() => abtClickHandle("techSkills")}>
                 <div className="indvDot"></div>
                 <div className="indvDot"></div>
                 <div className="indvDot"></div>
@@ -321,7 +333,7 @@ function App() {
               <div className="abName md:text-lg text-sm">
                 Education
               </div>
-              <div className="dots">
+              <div className="dots" onClick={() => abtClickHandle("education")}>
                 <div className="indvDot"></div>
                 <div className="indvDot"></div>
                 <div className="indvDot"></div>
@@ -334,20 +346,16 @@ function App() {
             </div>
           </div>
         </article>
-        <header className="flex flex-auto h-full justify-center items-center">
-          <div className="headNum sm:text-5xl text-2xl mr-3 ml-4">3. </div>
-          <div className="headCont flex flex-col text-neutral-400 md:text-2xl 2xl:text-xl text-sm">
-            About Me
-            <h1 className=" w-24 font-thin text-left text-neutral-400 2xl:text-xl text-xs">Use the dots!</h1>
-          </div>
-        </header>
-        <article className="flex flex-auto h-full justify-center items-center justify-around flex-col">
+        <div className="flex w-2/6 h-full flex-col">
+          <AboutReturn props = {abtState}/>
+        </div>
+        <article className="indvAS flex flex-auto h-full justify-center items-center justify-around flex-col">
           <div className="aboutBox mr-auto" data-aos="fade">
           <div className="abTopHalf">
               <div className="abName md:text-lg text-sm">
                 Work History
               </div>
-              <div className="dots">
+              <div className="dots" onClick={() => abtClickHandle("workHist")}>
                 <div className="indvDot"></div>
                 <div className="indvDot"></div>
                 <div className="indvDot"></div>
@@ -364,7 +372,7 @@ function App() {
               <div className="abName md:text-lg text-sm">
                 Personal
               </div>
-              <div className="dots">
+              <div className="dots" onClick={() => abtClickHandle("personal")}>
                 <div className="indvDot"></div>
                 <div className="indvDot"></div>
                 <div className="indvDot"></div>
