@@ -77,32 +77,38 @@
     .ssCap{
         font-size:2vw !important;
     }
+    .skillFoot{
+        font-size:2.5vw;
+    }
     .sec3{
-        padding-top:20%;
-        padding-bottom:15%;
-        max-height:800px;
+        height:250vh !important;
+        padding-top:15% !important;
+        max-height:1350px !important;
     }
     .psContainer{
         height:60vh;
         padding-top:10%;
-        max-width:250px !important;
+        max-width:150px !important;
         flex-wrap:wrap !important;
     }
     .projHolder{
-        min-width:80px;
+        min-width:80px !important;
+        min-height:80px !important;
     }
     .projHolderUno{
+        min-width:80px !important;
+        min-height:80px !important;
         margin-right:5%;
     }
     .projTitleHolder{
-        min-width:100px;
+        min-width:100px !important;
+        min-height:100px !important;
     }
     .toolsList{
         font-size:0.3rem !important;
     }
     .aboutSec{
-        height:75vh !important;
-        padding-bottom:10%;
+        height:55vh !important;
         flex-direction:column !important;
     }
     .aboutBox{
@@ -139,6 +145,40 @@
         opacity:1;
     }
 }
+
+@keyframes abtSlideOut {
+    0%{
+        opacity:1;
+        transform:translateY(0%);
+    }
+    100%{
+        opacity:0;
+        transform:translateY(100%);
+    }
+}
+
+@keyframes abtSlideIn {
+    0%{
+        opacity:0;
+        transform:translateY(100%);
+    }
+    100%{
+        opacity:1;
+        transform:translateY(0%);
+    }
+}
+
+@keyframes pulsate {
+    0%{
+        background-color: var(--border1);
+    }
+    50%{
+        background-color: var(--primary1);
+    }
+    100%{
+        background-color: var(--border1);
+    }
+}
 /* Animation End*/
 
 html {
@@ -156,7 +196,7 @@ html {
 }
 .App{
     overflow-x: hidden;
-    background-color: var(--primary2);
+    background: var(--primary2);
 }
 nav{
     background-color: var(--primary2);
@@ -379,10 +419,12 @@ nav{
     color:rgb(203, 203, 203)
 }
 .sec3{
+    display:flex;
     width:100%;
 }
 .psContainer{
-    max-width:1000px;
+    max-width:300px;
+    flex-wrap:wrap;
 }
 .projSec{
     display:flex;
@@ -391,10 +433,8 @@ nav{
     align-items:center;
     flex-direction:column;
     flex:1 1 0;
-    height:50vw;
-    padding-top:2%;
-    padding-bottom:5%;
-    max-height:500px;
+    height:60vw;
+    max-height:300px;
     max-width:800px;
 }
 .projHead{
@@ -404,7 +444,7 @@ nav{
     width:94%;
     max-width:1105px;
     padding-top:14%;
-    padding-bottom:4%;
+    padding-bottom:15%;
     margin-right:auto;
     margin-left:auto;
     color:white;
@@ -412,24 +452,24 @@ nav{
 }
 .projHolder{
     position:relative;
-    width:80%;
-    height:55%;
+    width:90%;
+    height:100%;
     max-width:200px;
-    max-height:250px;
-    min-width:100px;
-    min-height:50px;
+    max-height:200px;
+    min-width:200px;
+    min-height:175px;
     border-radius:5%;
     background-color: var(--border2);
     transition:all 0.3s ease-in-out;
 }
 .projHolderUno{
     position:relative;
-    width:80%;
-    height:55%;
+    width:90%;
+    height:100%;
     max-width:200px;
-    max-height:250px;
-    min-width:100px;
-    min-height:50px;
+    max-height:200px;
+    min-width:150px;
+    min-height:175px;
     border-radius:5%;
     background-color: var(--border2);
     transition:all 0.3s ease-in-out;
@@ -461,12 +501,48 @@ nav{
     display:flex;
     justify-content:center;
     align-items:center;
-    width:80%;
-    height:45%;
-    max-height:140px;
+    width:100%;
+    height:100%;
+    max-width:450px;
+    min-height:200px;
     margin-top:15%;
     border-radius:12px;
+    background-color: var(--primary2);
     box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+.pth1{
+    position: relative;
+    top:-78%;
+    left:-45%;
+    border-left-color:var(--border1);
+    border-left-width:1.5px;
+}
+.ph1:hover, .ph3:hover{
+    transform:translateX(55%) !important;
+}
+.pth2{
+    position: relative;
+    top:-78%;
+    left:45%;
+    border-right-color:var(--border1);
+    border-right-width:1.5px;
+}
+.ph2:hover, .ph4:hover{
+    transform:translateX(-55%) !important;
+}
+.pth3{
+    position: relative;
+    top:-78%;
+    left:-45%;
+    border-left-color:var(--border1);
+    border-left-width:1.5px;
+}
+.pth4{
+    position: relative;
+    top:-78%;
+    left:45%;
+    border-right-color:var(--border1);
+    border-right-width:1.5px;
 }
 .repoLink{
     position:absolute;
@@ -540,7 +616,7 @@ nav{
 }
 .aboutSec{
     height:65vw;
-    padding-top:14%;
+    padding-top:5%;
     max-height:700px;
     background-color: var(--primary2);
 }
@@ -556,15 +632,27 @@ nav{
     border-radius:8px;
     border-width:1px;
     transition:all 0.5s ease-in-out !important;
+    overflow:hidden;
 }
-.aboutBox:hover {
+.aboutBox::before{
+    content:'';
+    width:100%;
+    height:100%;
+    position:fixed;
     background-color: var(--border1);
+    opacity:0;
+    z-index:-1;
+    animation: abtSlideOut 0.5s ease-in-out;
+}
+.aboutBox:hover::before{
+    animation: abtSlideIn 0.5s ease-in-out;
+    opacity:1;
 }
 .aboutBox:hover .abName, .aboutBox:hover .abDesc{
     color: var(--primary1);
 }
-.aboutBox:hover .indvDot{
-    background-color: var(--primary1);
+.aboutBox:hover .indvDot {
+    animation: pulsate 2s infinite ease-in-out;
 }
 .abName{
     display:flex;
@@ -596,9 +684,11 @@ nav{
     justify-content:center;
     justify-content: space-around;
     width:20%;
+    height:20%;
     padding-top:3%;
     padding-right:3%;
     margin-left:auto;
+    cursor:pointer;
 }
 .indvDot{
     width:0.8vw;
@@ -608,7 +698,6 @@ nav{
     margin-top:10%;
     max-width:8px;
     max-height:8px;
-    transition:all 0.5s ease-in-out !important;
 }
 footer{
     color:#0d2242;

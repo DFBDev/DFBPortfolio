@@ -209,8 +209,11 @@ function App() {
             </div>
           </div>
         </article>
+        <h2 className="skillFoot flex text-gray-500 font-thin justify-center text-center" data-aos="fade-up">
+          Not to mention VSCode, Boostrap, prior experience with <br></br> C++ & Python, RESTful API, JSON analysis/application and, of course, Git!
+        </h2>
       </section>
-      <section className="sec3 flex justify-center items-center flex-col" ref={projRef}>
+      <section className="sec3 flex items-center flex-col" ref={projRef}>
         {/* Projects Section */}
         <header className="projHead md:text-xl 2xl:text-3xl w-100 font-normal">
           <div className="headAcc mr-4" data-aos="zoom-in-right" data-aos-duration="800"></div>
@@ -223,10 +226,10 @@ function App() {
         </header>
         <article className="psContainer w-full flex">
         <div className="projSec">
-          <div className="projHolderUno mt-auto" data-aos="fade">
+          <div className="projHolderUno ph1 mt-auto" data-aos="fade-left">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/Messaging-App" target="_blank"><img className="projImg" src={require("./Images/ss1.png")}></img></a></figure>
           </div>
-          <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
+          <div className="projTitleHolder pth1 mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-right">
             <div className="projTitle">
               <h1 className="pT text-neutral-400">Messaging App</h1>
               <ul className="toolsList text-neutral-400">
@@ -245,10 +248,10 @@ function App() {
           </div>
         </div>
         <div className="projSec">
-          <div className="projHolder mt-auto" data-aos="fade">
+          <div className="projHolder ph2 mt-auto" data-aos="fade-right">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/SignUpForm" target="_blank"><img className="projImg" src={require("./Images/ss2.png")}></img></a></figure>
           </div>
-          <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
+          <div className="projTitleHolder pth2 mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-left">
             <div className="projTitle">
             <h1 className="pT text-neutral-400">Sign-Up Form</h1>
               <ul className="toolsList text-neutral-400">
@@ -265,10 +268,10 @@ function App() {
           </div>
         </div>
         <div className="projSec">
-          <div className="projHolder mt-auto" data-aos="fade">
+          <div className="projHolder ph3 mt-auto" data-aos="fade-left">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/React-Calculator" target="_blank"><img className="projImg" src={require("./Images/ss3.png")}></img></a></figure>
           </div>
-          <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
+          <div className="projTitleHolder pth3 mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-right">
             <div className="projTitle">
             <h1 className="pT text-neutral-400">Calculator</h1>
               <ul className="toolsList text-neutral-400">
@@ -286,10 +289,10 @@ function App() {
           </div>
         </div>
         <div className="projSec">
-          <div className="projHolder mt-auto" data-aos="fade">
+          <div className="projHolder ph4 mt-auto" data-aos="fade-right">
               <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/eCommerce/#/" target="_blank"><img className="projImg" src={require("./Images/ec.png")}></img></a></figure>
           </div>
-          <div className="projTitleHolder mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-up">
+          <div className="projTitleHolder pth4 mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-left"> 
             <div className="projTitle">
             <h1 className="pT text-neutral-400">EC</h1>
               <ul className="toolsList text-neutral-400">
