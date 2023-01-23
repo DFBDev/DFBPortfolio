@@ -1,6 +1,5 @@
 import AOS from "aos";
 import 'aos/dist/aos.css';
-import { AnimatePresence } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 import { AboutReturn } from "./comps";
 
@@ -220,95 +219,111 @@ function App() {
           <div className="headNum sm:text-5xl text-4xl mr-3" data-aos="fade">2. </div>
           <div className="headCont flex flex-col text-neutral-400 text-base md:text-xl" data-aos="fade">
             Recent Projects
-            <h1 className="font-thin text-white md:text-lg 2xl:text-xl text-xs text-neutral-400">Click for site demo!</h1>
+            <h1 className="font-thin text-white md:text-lg 2xl:text-xl text-xs text-neutral-400">Hover over the image!</h1>
           </div>
           <div className="headAcc ml-4" data-aos="zoom-in-left" data-aos-duration="800"></div>
         </header>
         <article className="psContainer w-full flex">
-        <div className="projSec">
-          <div className="projHolderUno ph1 mt-auto" data-aos="fade-left">
+        <div className="projSec ps1">
+          <div className="projHolderUno ph1 mt-auto" data-aos="fade-right">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/Messaging-App" target="_blank"><img className="projImg" src={require("./Images/ss1.png")}></img></a></figure>
           </div>
-          <div className="projTitleHolder pth1 mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-right">
+          <div className="projTitleHolder pth1 mt-2 rounded-tl-lg rounded-tr-lg">
             <div className="projTitle">
               <h1 className="pT text-neutral-400">Messaging App</h1>
-              <ul className="toolsList text-neutral-400">
-                <li className="tlSlot">HTML</li>
-                <li className="tlSlot">CSS</li>
-                <li className="tlSlot">React</li>
-                <li className="tlSlot">Node.js</li>
-                <li className="tlSlot">Firebase/API</li>
-              </ul>
             </div>
-            <div className="repoLink">
-              <a href="https://github.com/DFBDev/Messaging-App" target="_blank">
-                <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
-              </a>
-            </div>
+            <p className="mb-auto text-gray-500 text-xs text-center w-3/4">
+              CRUD oriented Messaging Application made with Firebase's Firestore/Google account authentication SDK and NPM. Some features include real-time message updates, 
+              mini profiles, and special admin features. 
+            </p>
           </div>
+          <ul className="toolsList tlr text-neutral-400">
+                <li className="tlSlot" data-aos="fade-left">HTML<div className="bulletPoint"><div className="bpInner"></div></div></li>
+                <li className="tlSlot" data-aos="fade-left">CSS<div className="bulletPoint"><div className="bpInner"></div></div></li>
+                <li className="tlSlot" data-aos="fade-left">React<div className="bulletPoint"><div className="bpInner"></div></div></li>
+                <li className="tlSlot" data-aos="fade-left">Node.js<div className="bulletPoint"><div className="bpInner"></div></div></li>
+                <li className="tlSlot" data-aos="fade-left">Firebase<div className="bulletPoint"><div className="bpInner"></div></div></li>
+          </ul>
+          <div className="repoLink rlr">
+                <a href="https://github.com/DFBDev/Messaging-App" target="_blank">
+                  <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
+                </a>
+            </div>
         </div>
-        <div className="projSec">
-          <div className="projHolder ph2 mt-auto" data-aos="fade-right">
+        <div className="projSec ps2">
+          <div className="projHolder ph2 mt-auto" data-aos="fade-left">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/SignUpForm" target="_blank"><img className="projImg" src={require("./Images/ss2.png")}></img></a></figure>
           </div>
-          <div className="projTitleHolder pth2 mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-left">
+          <div className="projTitleHolder pth2 mt-2 rounded-tl-lg rounded-tr-lg">
             <div className="projTitle">
-            <h1 className="pT text-neutral-400">Sign-Up Form</h1>
-              <ul className="toolsList text-neutral-400">
-                <li className="tlSlot">HTML</li>
-                <li className="tlSlot">CSS</li>
-                <li className="tlSlot">Template Showcase</li>
-              </ul>
+              <h1 className="pT2 text-neutral-400">Sign-Up Form</h1>
             </div>
-            <div className="repoLink">
+            <p className="mb-auto text-gray-500 text-xs text-center w-3/4">
+              Simple Sign-up Form with automatic form validation, made purely with HTML and CSS. Made largely as a useful display of practical
+              knowledge of modern design, HTML semantics/attributes, and common CSS practices.
+            </p>
+          </div>
+          <ul className="toolsList tll text-neutral-400">
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>HTML</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>CSS</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>Template</li>
+          </ul>
+          <div className="repoLink rll">
               <a href="https://github.com/DFBDev/SignUpForm" target="_blank">
                 <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
               </a>
-            </div>
           </div>
         </div>
-        <div className="projSec">
-          <div className="projHolder ph3 mt-auto" data-aos="fade-left">
+        <div className="projSec ps3">
+          <div className="projHolder ph3 mt-auto" data-aos="fade-right">
             <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/React-Calculator" target="_blank"><img className="projImg" src={require("./Images/ss3.png")}></img></a></figure>
           </div>
-          <div className="projTitleHolder pth3 mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-right">
+          <div className="projTitleHolder pth3 mt-2 rounded-tl-lg rounded-tr-lg">
             <div className="projTitle">
             <h1 className="pT text-neutral-400">Calculator</h1>
-              <ul className="toolsList text-neutral-400">
-                <li className="tlSlot">HTML</li>
-                <li className="tlSlot">CSS</li>
-                <li className="tlSlot">React</li>
-                <li className="tlSlot">Node.js</li>
-              </ul>
             </div>
-            <div className="repoLink">
+            <p className="mb-auto text-gray-500 text-xs text-center w-3/4">
+              Basic React-powered calculator, initially intended to be hands-on lesson to better understand state/prop management,
+              the component lifecycle, functional vs class components, component rendering, NPM, etc.
+            </p>
+          </div>
+          <ul className="toolsList tlr text-neutral-400">
+                <li className="tlSlot" data-aos="fade-left">HTML<div className="bulletPoint"><div className="bpInner"></div></div></li>
+                <li className="tlSlot" data-aos="fade-left">CSS<div className="bulletPoint"><div className="bpInner"></div></div></li>
+                <li className="tlSlot" data-aos="fade-left">React<div className="bulletPoint"><div className="bpInner"></div></div></li>
+                <li className="tlSlot" data-aos="fade-left">Node.js<div className="bulletPoint"><div className="bpInner"></div></div></li>
+          </ul>
+          <div className="repoLink rlr">
               <a href="https://github.com/DFBDev/React-Calculator" target="_blank">
                 <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
               </a>
-            </div>
-          </div>
+          </div>  
         </div>
-        <div className="projSec">
-          <div className="projHolder ph4 mt-auto" data-aos="fade-right">
+        <div className="projSec ps4">
+          <div className="projHolder ph4 mt-auto" data-aos="fade-left">
               <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/eCommerce/#/" target="_blank"><img className="projImg" src={require("./Images/ec.png")}></img></a></figure>
           </div>
-          <div className="projTitleHolder pth4 mt-2 rounded-tl-lg rounded-tr-lg" data-aos="fade-left"> 
+          <div className="projTitleHolder pth4 mt-2 rounded-tl-lg rounded-tr-lg"> 
             <div className="projTitle">
-            <h1 className="pT text-neutral-400">EC</h1>
-              <ul className="toolsList text-neutral-400">
-                <li className="tlSlot">HTML</li>
-                <li className="tlSlot">CSS</li>
-                <li className="tlSlot">React</li>
-                <li className="tlSlot">Node.js</li>
-                <li className="tlSlot">In Progress</li>
-              </ul>
+            <h1 className="pT2 text-neutral-400">EC</h1>
             </div>
-            <div className="repoLink">
+            <p className="mb-auto text-gray-500 text-xs text-center w-3/4">
+              SPA, work-in-progress Real Estate Agent platform for a personal client, using CRA, Hash routing and NPM. Plans are to implement 
+              Google Drive API, downloadable content, WhatsApp API, FramerMotion animations and Next.js.
+            </p>
+          </div>
+          <ul className="toolsList tll text-neutral-400">
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>HTML</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>CSS</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>React</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>Node.js</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>WIP</li>
+          </ul>
+          <div className="repoLink rll">
               <a href="https://github.com/DFBDev/eCommerce" target="_blank">
                 <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
               </a>
             </div>
-          </div>
         </div>
         </article>
       </section>
