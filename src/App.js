@@ -237,14 +237,14 @@ function App() {
               mini profiles, and special admin features. 
             </p>
           </div>
-          <ul className="toolsList tlr text-neutral-400">
+          <ul className="toolsList tlr1 text-neutral-400">
                 <li className="tlSlot" data-aos="fade-left">HTML<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">CSS<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">React<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">Node.js<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">Firebase<div className="bulletPoint"><div className="bpInner"></div></div></li>
           </ul>
-          <div className="repoLink rlr">
+          <div className="repoLink rlr1">
                 <a href="https://github.com/DFBDev/Messaging-App" target="_blank">
                   <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
                 </a>
@@ -263,12 +263,12 @@ function App() {
               knowledge of modern design, HTML semantics/attributes, and common CSS practices.
             </p>
           </div>
-          <ul className="toolsList tll text-neutral-400">
+          <ul className="toolsList tll1 text-neutral-400">
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>HTML</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>CSS</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>Template</li>
           </ul>
-          <div className="repoLink rll">
+          <div className="repoLink rll1">
               <a href="https://github.com/DFBDev/SignUpForm" target="_blank">
                 <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
               </a>
@@ -287,13 +287,13 @@ function App() {
               the component lifecycle, functional vs class components, component rendering, NPM, etc.
             </p>
           </div>
-          <ul className="toolsList tlr text-neutral-400">
+          <ul className="toolsList tlr2 text-neutral-400">
                 <li className="tlSlot" data-aos="fade-left">HTML<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">CSS<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">React<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">Node.js<div className="bulletPoint"><div className="bpInner"></div></div></li>
           </ul>
-          <div className="repoLink rlr">
+          <div className="repoLink rlr2">
               <a href="https://github.com/DFBDev/React-Calculator" target="_blank">
                 <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
               </a>
@@ -312,14 +312,14 @@ function App() {
               Google Drive API, downloadable content, WhatsApp API, FramerMotion animations and Next.js.
             </p>
           </div>
-          <ul className="toolsList tll text-neutral-400">
+          <ul className="toolsList tll2 text-neutral-400">
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>HTML</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>CSS</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>React</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>Node.js</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>WIP</li>
           </ul>
-          <div className="repoLink rll">
+          <div className="repoLink rll2">
               <a href="https://github.com/DFBDev/eCommerce" target="_blank">
                 <img className="w-1/2 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
               </a>
@@ -328,7 +328,7 @@ function App() {
         </article>
       </section>
       <section className="aboutSec flex justify-center items-center text-white" ref={aboutRef}>
-        <article className="indvAS flex flex-auto h-full justify-center items-center flex-col justify-around">
+        <article className="indvAS flex flex-auto h-full justify-center items-center flex-col justify-around my-auto">
           <div className="aboutBox ml-auto" data-aos="fade">
             <div className="abTopHalf">
               <div className="abName md:text-lg text-sm">
@@ -359,7 +359,7 @@ function App() {
             </div>
             <div className="abBotHalf">
               <div className="abDesc md:text-sm text-xs">
-                Soft skills, technical, etc.
+                History & Achievements
               </div>
             </div>
           </div>
@@ -367,7 +367,7 @@ function App() {
         <div className="flex w-2/6 h-full flex-col">
           <AboutReturn props = {abtState}/>
         </div>
-        <article className="indvAS flex flex-auto h-full justify-center items-center justify-around flex-col">
+        <article className="indvAS flex flex-auto h-full justify-center items-center justify-around flex-col ">
           <div className="aboutBox mr-auto" data-aos="fade">
           <div className="abTopHalf">
               <div className="abName md:text-lg text-sm">
@@ -398,7 +398,7 @@ function App() {
             </div>
             <div className="abBotHalf">
               <div className="abDesc md:text-sm text-xs">
-                Softskills, technical, etc.
+                Overview & Fun Facts
               </div>
             </div>
           </div>

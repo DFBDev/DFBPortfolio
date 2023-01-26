@@ -69,7 +69,7 @@
         margin-right:auto;
     }
     .section2{
-        padding-top:15%;
+        padding-top:0%;
     }
     .ssHolder{
         max-width:200px !important;
@@ -81,41 +81,115 @@
         font-size:2.5vw;
     }
     .sec3{
-        height:250vh !important;
-        padding-top:15% !important;
-        max-height:1350px !important;
+        max-height:1500px !important;
+        padding-top:0% !important;
+    }
+    .projSec{
+        height:150px !important;
+        max-height:1500px !important;
     }
     .psContainer{
-        height:60vh;
+        height:800px !important;
         padding-top:10%;
         max-width:150px !important;
         flex-wrap:wrap !important;
     }
     .projHolder{
-        min-width:80px !important;
-        min-height:80px !important;
+        max-width:80px !important;
+        min-height:180px !important;
     }
     .projHolderUno{
-        min-width:80px !important;
-        min-height:80px !important;
-        margin-right:5%;
+        max-width:60px !important;
+        min-height:200px !important;
     }
     .projTitleHolder{
-        min-width:100px !important;
-        min-height:100px !important;
+        max-width:60px !important;
+        min-height:200px !important;
+    }
+    .pth1{
+        top:-125% !important;
+        left:-20% !important;
+    }
+    .pth3{
+        top:-75% !important;
+        left:-20% !important;
+    }
+    .pth2{
+        top:-95% !important;
+        left:-5% !important;
+    }
+    .pth4{
+        top:-50% !important;
+        left:-5% !important;
+    }
+    .ph1{
+        top:28% !important;
+        left:20% !important;
+    }
+    .ph3{
+        top:72% !important;
+        left:10% !important;
+    }
+    .ph2{
+        top:50% !important;
+        right:35% !important;
+    }
+    .ph4{
+        top:96% !important;
+        right:35% !important;
     }
     .toolsList{
-        font-size:0.3rem !important;
+        font-size:0.5rem !important;
+    }
+    .tlr1{
+        top:-259% !important;
+        right:-67% !important;
+    }
+    .tll1{
+        bottom:228% !important;
+        right:94% !important;
+    }
+    .tlr2{
+        top:-209% !important;
+        right:-67% !important;
+    }
+    .tll2{
+        left:-93% !important;
+        top:-183% !important;
+    }
+    .rlr1{
+        left:100% !important;
+        top:-392% !important;
+    }
+    .rlr2{
+        left:100% !important;
+        top:-342% !important;
+    }
+    .rll1{
+        left:-127% !important;
+        top:-361.5% !important;
+    }
+    .rll2{
+        left:-126% !important;
+        top:-316% !important;
     }
     .aboutSec{
-        height:55vh !important;
+        height:75vh !important;
         flex-direction:column !important;
     }
     .aboutBox{
         max-height:125px !important;
         min-height:100px !important;
+        min-width:140px;
         margin-left:5%;
         margin-right:5%;
+        margin-bottom:5%;
+    }
+    .abtP{
+        width:90vw !important;
+    }
+    .abtL{
+        width:30vw;
     }
     .indvAS{
         flex-direction:row !important;
@@ -149,11 +223,9 @@
 @keyframes abtSlideOut {
     0%{
         opacity:1;
-        transform:translateY(0%);
     }
     100%{
         opacity:0;
-        transform:translateY(100%);
     }
 }
 
@@ -183,7 +255,7 @@
 
 html {
     overflow-x:hidden;
-    background-color: aqua;
+    background-color: var(--primary2);
 }
 :root {
     --primary2: #091026;
@@ -421,7 +493,7 @@ nav{
 .sec3{
     display:flex;
     width:100%;
-    max-height:1750px;
+    max-height:1650px;
 }
 .psContainer{
     max-width:300px;
@@ -576,13 +648,13 @@ nav{
 .repoLink:hover{
     
 }
-.rlr{
+.rlr1, .rlr2{
     top:-210.7%;
     left:125%;
     border-top-right-radius:12px;
     border-bottom-right-radius:12px;
 }
-.rll {
+.rll1, .rll2{
     top:-210.7%;
     left:-125%;
     border-top-left-radius:12px;
@@ -634,7 +706,7 @@ nav{
     min-width:90px;
     overflow:hidden;
 }
-.tlr{
+.tlr1, .tlr2{
     bottom:144%;
     right:-90%;
     border-right-style:solid;
@@ -643,7 +715,7 @@ nav{
     padding-left:15%;
     box-shadow: -24px 0px 30px -30px rgba(53, 72, 177, 0.5) inset;
 }
-.tll{
+.tll1, .tll2{
     bottom:144%;
     right:90%;
     border-left-style:solid;
@@ -713,7 +785,6 @@ nav{
 }
 .aboutSec{
     height:65vw;
-    padding-top:5%;
     max-height:700px;
     background-color: var(--primary2);
 }
@@ -799,13 +870,12 @@ nav{
 footer{
     color:#0d2242;
     background-color: var(--primary2);
-    padding-bottom:15%;
+    padding-bottom:3%;
     max-height:400px;
 }
 .footExtension{
     display:flex;
     padding-top:15%;
-    padding-bottom:4px;
     justify-content:center;
     align-items:center;
     background-color: var(--primary2);
