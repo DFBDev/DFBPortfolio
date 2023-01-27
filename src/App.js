@@ -342,7 +342,7 @@ function App() {
             </div>
             <div className="abBotHalf">
               <div className="abDesc md:text-sm text-xs">
-                Soft skills, technical, etc.
+                General & Specific
               </div>
             </div>
             </div>
@@ -381,7 +381,7 @@ function App() {
             </div>
             <div className="abBotHalf">
               <div className="abDesc md:text-sm text-xs">
-                Soft skills, technical, etc.
+                Previous & Skills
               </div>
             </div>
           </div>
