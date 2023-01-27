@@ -41,14 +41,14 @@ function App() {
 
   return (
     <main className="App flex flex-col">
-      <nav className="flex w-screen h-16">
+      <nav className="flex w-screen h-16 2xl:h-20">
         {/* Navigation Bar Content */}
         <h1 className="my-auto lg:ml-4 w-24 font-thin text-center text-white sm:text-xl 2xl:text-3xl text-neutral-400"><span className="dfb font-normal text-white">DFB</span>Dev</h1>
         <ul className="navOpts flex justify-center justify-between items-center max-w-2xl w-8/12 ml-auto mr-5 my-auto font-thin text-white sm:text-xl 2xl:text-3xl">
           <li className="opt" onClick={clickScroll2}><span className="navNum font-normal">1.</span> Skills</li>
           <li className="opt" onClick={clickScroll3}><span className="navNum font-normal">2.</span> Projects</li>
           <li className="opt" onClick={clickScroll}><span className="navNum font-normal">3.</span> About</li>
-          <li className="opt"><span className="navNum font-normal">4.</span> Contact</li>
+          <li className="opt mr-6"><span className="navNum font-normal">4.</span> Contact</li>
         </ul>
       </nav>
       <section className="section1 flex w-screen">

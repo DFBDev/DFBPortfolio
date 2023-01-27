@@ -6,11 +6,25 @@
 
 /* Breakpoint Section */
 @media screen and (min-width: 1536px) {
+    .opt{
+        max-height:40px !important;
+    }
     .personalImg{
         max-height:550px !important;
+        max-width:650px !important;
+    }
+    .introP{
+        font-size:1vw !important;
+    }
+    .indvLinks{
+        max-width:100px !important;
+        max-height:100px !important;
     }
     .toolsList{
         font-size:0.8rem !important;
+    }
+    .tlSlot{
+        width:100% !important;
     }
     .ssHolder{
         margin-left:auto !important;
@@ -24,14 +38,20 @@
     .skillsHeader{
         margin-bottom:3% !important;
     }
+    .ssCap{
+        
+    }
     .projTitle{
         font-size:0.8vw !important;
+    }
+    .aboutSec{
+        margin-top:15%;
     }
     
 }
 @media screen and (min-width: 1024px) {
     .ssCap{
-        font-size:1vw !important;
+        font-size:0.8vw !important;
     }
 }
 @media screen and (max-width: 632px){
@@ -747,10 +767,10 @@ nav{
     align-items:center;
     width:0.5vw;
     height:0.5vw;
-    max-width:20px;
-    max-height:20px;
-    min-height:7px;
-    min-width:7px;
+    max-width:12px;
+    max-height:12px;
+    min-height:6px;
+    min-width:6px;
     background-color: var(--border1);
     transform:rotate(45deg);
     margin-right:10%;
@@ -763,8 +783,8 @@ nav{
     background-color: var(--primary2);
     width:70%;
     height:70%;
-    min-height:3px;
-    min-width:3px;
+    max-height:8px;
+    max-width:8px;
 }
 .piHolder{
     display:flex;
@@ -879,15 +899,11 @@ footer{
 }
 .footExtension{
     display:flex;
-    padding-top:15%;
     justify-content:center;
     align-items:center;
     background-color: var(--primary2);
     width:100%;
-    height:8vh;
     color:#22395c;
     font-size:0.7em;
-}
-.footCredits{
-    margin-top:0.8%;
+    margin-top:15%;
 }
