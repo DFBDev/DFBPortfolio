@@ -38,9 +38,6 @@
     .skillsHeader{
         margin-bottom:3% !important;
     }
-    .ssCap{
-        
-    }
     .projTitle{
         font-size:0.8vw !important;
     }
@@ -316,6 +313,9 @@ nav{
     padding-bottom:4%;
     color:white;
 }
+
+/* Introduction Section (first section) */
+
 .section1{
     height:55vw;
     min-height:350px;
@@ -432,6 +432,10 @@ nav{
     animation: slideUp 0.3s ease-in-out;
     pointer-events: none;
 }
+/* Introduction Section end */
+
+/* Skills Section */
+
 .section2{
     background-color: var(--primary2);
     padding-bottom:5%;
@@ -513,6 +517,11 @@ nav{
     font-family:'didot';
     color:rgb(203, 203, 203)
 }
+
+/* Skills Section end */
+
+/* Project Section */
+
 .sec3{
     display:flex;
     width:100%;
@@ -668,9 +677,6 @@ nav{
     transition:all 0.2s ease-in-out;
     box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.75);
 }
-.repoLink:hover{
-    
-}
 .rlr1, .rlr2{
     top:-210.7%;
     left:125%;
@@ -806,6 +812,11 @@ nav{
     border-radius:4%;
     transition:all 0.3s ease-in-out;
 }
+
+/* Project Section end */
+
+/* About Section */
+
 .aboutSec{
     height:65vw;
     max-height:700px;
@@ -891,6 +902,9 @@ nav{
     max-width:8px;
     max-height:8px;
 }
+
+/* About Section end */
+
 footer{
     color:#22395c;
     background-color: var(--primary2);
