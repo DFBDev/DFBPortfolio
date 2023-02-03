@@ -1,7 +1,8 @@
 import AOS from "aos";
 import 'aos/dist/aos.css';
 import { useEffect, useRef, useState } from "react";
-import { AboutReturn } from "./comps";
+import { AboutReturn } from "./components/aboutSection";
+import { ContactPopup } from "./components/contact";
 
 //Main body application, components can be found in comps.js.
 //Elements are stylized by a mixture of Tailwind and Vanilla CSS (whichever is circumstantially easier).
@@ -11,17 +12,21 @@ function App() {
   const skillRef = useRef(null);
   const projRef = useRef(null);
   const [abtState, setAS] = useState("default");
+  const [contactState, setCS] = useState("closed");
 
   const clickScroll = () => {
     aboutRef.current?.scrollIntoView({behavior: 'smooth'});
+    {/* About Section auto-scroll trigger */}
   }
 
   const clickScroll2 = () => {
     skillRef.current?.scrollIntoView({behavior: 'smooth'});
+    {/* Skill Section auto-scroll trigger */}
   }
 
   const clickScroll3 = () => {
     projRef.current?.scrollIntoView({behavior: 'smooth'});
+    {/* Project Section auto-scroll trigger */}
   }
 
   const abtClickHandle = (choice) => {
@@ -31,28 +36,42 @@ function App() {
     else {
       setAS("default");
     }
+    {/* About Section auto-scroll trigger */}
   } 
 
-  {/* Animation initializer for scrolling animations using AOS library */}
+  const contactClickHandle = () => {
+    if (contactState == "closed"){
+      setCS("open");
+    }
+    else if (contactState == "open") {
+      setCS("closed");
+    }
+  }
 
   useEffect(() => {
     AOS.init({duration: 1000})
+    /* Animation initializer for scrolling animations using AOS library */
   }, []);
 
   return (
     <main className="App flex flex-col">
+      <ContactPopup props ={contactState}/>
+
+      {/* Navigation Bar Content */}
+
       <nav className="flex w-screen h-16 2xl:h-20">
-        {/* Navigation Bar Content */}
         <h1 className="my-auto lg:ml-4 w-24 font-thin text-center text-white sm:text-xl 2xl:text-3xl text-neutral-400"><span className="dfb font-normal text-white">DFB</span>Dev</h1>
         <ul className="navOpts flex justify-center justify-between items-center max-w-2xl w-8/12 ml-auto mr-5 my-auto font-thin text-white sm:text-xl 2xl:text-3xl">
           <li className="opt" onClick={clickScroll2}><span className="navNum font-normal">1.</span> Skills</li>
           <li className="opt" onClick={clickScroll3}><span className="navNum font-normal">2.</span> Projects</li>
           <li className="opt" onClick={clickScroll}><span className="navNum font-normal">3.</span> About</li>
-          <li className="opt mr-6"><span className="navNum font-normal">4.</span> Contact</li>
+          <li className="opt mr-6" onClick={() => contactClickHandle()}><span className="navNum font-normal">4.</span> Contact</li>
         </ul>
       </nav>
+
+      {/* Introduction Section */}
+
       <section className="section1 flex w-screen">
-        {/* Introduction Section */}
         <figure className="flex w-3/4"><img className="personalImg my-auto" src={require("./Images/Personalmain.jpg")}/></figure>
         <article className="flex w-3/4 justify-center items-center flex-col">
           <p className="introText">
@@ -67,24 +86,26 @@ function App() {
           <ul className="persLinks flex w-3/4 h-1/4 justify-center items-center justify-between">
             <li className="indvLinks il1">
               <a href="https://www.linkedin.com/in/donathan-brown-929255248/" target="_blank">
-                <img className="ilIMG" src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")}></img>
+                <img className="ilIMG" src={require("./Images/2329259_linkedin_linkedin logo_logo_icon.png")} alt="LinkedIn Profile"></img>
               </a>
             </li>
             <li className="indvLinks il2">
               <a href="https://github.com/DFBDev" target="_blank">
-                <img className="ilIMG w-8/12 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")}></img>
+                <img className="ilIMG w-8/12 m-auto" src={require("./Images/GitHub-Mark-Light-64px.png")} alt="GitHub Profile"></img>
               </a>
             </li>
             <li className="indvLinks il3">
               <a>
-                <img className="ilIMG w-1/2 m-auto" src={require("./Images/resume-and-cv.png")}></img>
+                <img className="ilIMG w-1/2 m-auto" src={require("./Images/resume-and-cv.png")} alt="Resume"></img>
               </a>
             </li>
           </ul>
         </article>
       </section>
+
+      {/* Skills Section */}
+
       <section className="section2 flex flex-col justify-center w-screen" ref={skillRef}>
-        {/* Skills Section */}
         <header className="skillsHeader flex justify-center items center text-white my-5 text-neutral-400" data-aos="fade">
           <div className="headAcc mr-4" data-aos="zoom-in-right" data-aos-duration="800"></div>
           <div className="headNum sm:text-5xl text-4xl mr-3">1. </div>
@@ -98,7 +119,7 @@ function App() {
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1000">
             <div className="cardInner border-t-pink-900 border-t-2">
               <div className="cardFront">
-                <figure><img className="ssImg" src={require("./Images/html.png")}></img></figure>
+                <figure><img className="ssImg" src={require("./Images/html.png")} alt="HTML Icon"></img></figure>
                 <figcaption className="ssCap flex justify-center">HTML</figcaption>
               </div>
               <div className="cardBack md:text-base text-xs">
@@ -112,7 +133,7 @@ function App() {
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1250">
           <div className="cardInner border-t-pink-900 border-t-2">
               <div className="cardFront">
-                <figure><img className="ssImg" src={require("./Images/css-3.png")}></img></figure>
+                <figure><img className="ssImg" src={require("./Images/css-3.png")} alt="CSS Icon"></img></figure>
                 <figcaption className="ssCap flex justify-center">CSS</figcaption>
               </div>
               <div className="cardBack md:text-base text-xs">
@@ -126,7 +147,7 @@ function App() {
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1500">
           <div className="cardInner border-t-pink-900 border-t-2">
               <div className="cardFront">
-                <figure><img className="ssImg" src={require("./Images/js.png")}></img></figure>
+                <figure><img className="ssImg" src={require("./Images/js.png")} alt="Javascript Icon"></img></figure>
                 <figcaption className="ssCap flex justify-center">Javascript</figcaption>
               </div>
               <div className="cardBack md:text-base text-xs">
@@ -140,7 +161,7 @@ function App() {
           <div className="skillSlot" data-aos="fade-right" data-aos-duration="1750">
           <div className="cardInner border-t-pink-900 border-t-2">
               <div className="cardFront">
-                <figure><img className="ssImg" src={require("./Images/1174949_js_react js_logo_react_react native_icon.png")}></img></figure>
+                <figure><img className="ssImg" src={require("./Images/1174949_js_react js_logo_react_react native_icon.png")} alt="React.js Icon"></img></figure>
                 <figcaption className="ssCap flex justify-center">React.js</figcaption>
               </div>
               <div className="cardBack md:text-base text-xs">
@@ -154,7 +175,7 @@ function App() {
           <div className="skillSlot" data-aos="fade-left" data-aos-duration="1000">
           <div className="cardInner border-b-pink-900 border-b-2">
               <div className="cardFront">
-                <figure><img className="ssImg" src={require("./Images/node-js.png")}></img></figure>
+                <figure><img className="ssImg" src={require("./Images/node-js.png")} alt="Node.js Icon"></img></figure>
                 <figcaption className="ssCap flex justify-center">Node.js</figcaption>
               </div>
               <div className="cardBack md:text-base text-xs">
@@ -168,7 +189,7 @@ function App() {
           <div className="skillSlot" data-aos="fade-left" data-aos-duration="1250">
           <div className="cardInner border-b-pink-900 border-b-2">
               <div className="cardFront">
-                <figure><img className="ssImg" src={require("./Images/server (1).png")}></img></figure>
+                <figure><img className="ssImg" src={require("./Images/server (1).png")} alt="Database/BaaS Icon"></img></figure>
                 <figcaption className="ssCap flex justify-center">Firebase/BaaS</figcaption>
               </div>
               <div className="cardBack md:text-base text-xs">
@@ -182,7 +203,7 @@ function App() {
           <div className="skillSlot" data-aos="fade-left" data-aos-duration="1500">
           <div className="cardInner border-b-pink-900 border-b-2">
               <div className="cardFront">
-                <figure><img className="ssImg" src={require("./Images/figma.png")}></img></figure>
+                <figure><img className="ssImg" src={require("./Images/figma.png")} alt="Figma Icon"></img></figure>
                 <figcaption className="ssCap flex justify-center">Figma</figcaption>
               </div>
               <div className="cardBack md:text-base text-xs">
@@ -196,7 +217,7 @@ function App() {
           <div className="skillSlot" data-aos="fade-left" data-aos-duration="1750">
           <div className="cardInner border-b-pink-900 border-b-2">
               <div className="cardFront">
-                <figure><img className="ssImg" src={require("./Images/tailwind-css-icon.png")}></img></figure>
+                <figure><img className="ssImg" src={require("./Images/tailwind-css-icon.png")} alt="Tailwind Icon"></img></figure>
                 <figcaption className="ssCap flex justify-center">Tailwind</figcaption>
               </div>
               <div className="cardBack md:text-base text-xs">
@@ -212,8 +233,10 @@ function App() {
           Not to mention VSCode, Boostrap, prior experience with <br></br> C++ & Python, RESTful API, JSON analysis/application and, of course, Git!
         </h2>
       </section>
+
+      {/* Projects Section */}
+
       <section className="sec3 flex items-center flex-col" ref={projRef}>
-        {/* Projects Section */}
         <header className="projHead md:text-xl 2xl:text-3xl w-100 font-normal">
           <div className="headAcc mr-4" data-aos="zoom-in-right" data-aos-duration="800"></div>
           <div className="headNum sm:text-5xl text-4xl mr-3" data-aos="fade">2. </div>
@@ -226,7 +249,7 @@ function App() {
         <article className="psContainer w-full flex">
         <div className="projSec ps1">
           <div className="projHolderUno ph1 mt-auto" data-aos="fade-right">
-            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/Messaging-App" target="_blank"><img className="projImg" src={require("./Images/ss1.png")}></img></a></figure>
+            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/Messaging-App" target="_blank"><img className="projImg" src={require("./Images/ss1.png")} alt="Picture of Messaging App website"></img></a></figure>
           </div>
           <div className="projTitleHolder pth1 mt-2 rounded-tl-lg rounded-tr-lg">
             <div className="projTitle">
@@ -252,7 +275,7 @@ function App() {
         </div>
         <div className="projSec ps2">
           <div className="projHolder ph2 mt-auto" data-aos="fade-left">
-            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/SignUpForm" target="_blank"><img className="projImg" src={require("./Images/ss2.png")}></img></a></figure>
+            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/SignUpForm" target="_blank"><img className="projImg" src={require("./Images/ss2.png")} alt="Picture of SignUp Form website"></img></a></figure>
           </div>
           <div className="projTitleHolder pth2 mt-2 rounded-tl-lg rounded-tr-lg">
             <div className="projTitle">
@@ -276,7 +299,7 @@ function App() {
         </div>
         <div className="projSec ps3">
           <div className="projHolder ph3 mt-auto" data-aos="fade-right">
-            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/React-Calculator" target="_blank"><img className="projImg" src={require("./Images/ss3.png")}></img></a></figure>
+            <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/React-Calculator" target="_blank"><img className="projImg" src={require("./Images/ss3.png")} alt="Picture of Calculator website"></img></a></figure>
           </div>
           <div className="projTitleHolder pth3 mt-2 rounded-tl-lg rounded-tr-lg">
             <div className="projTitle">
@@ -301,7 +324,7 @@ function App() {
         </div>
         <div className="projSec ps4">
           <div className="projHolder ph4 mt-auto" data-aos="fade-left">
-              <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/eCommerce/#/" target="_blank"><img className="projImg" src={require("./Images/ec.png")}></img></a></figure>
+              <figure className="piHolder"><a className="piHolder2" href="https://dfbdev.github.io/eCommerce/#/" target="_blank"><img className="projImg" src={require("./Images/ec.png")} alt="Picture of EmissaryConnect website"></img></a></figure>
           </div>
           <div className="projTitleHolder pth4 mt-2 rounded-tl-lg rounded-tr-lg"> 
             <div className="projTitle">
@@ -327,6 +350,9 @@ function App() {
         </div>
         </article>
       </section>
+
+      {/* About Me Section */}
+
       <section className="aboutSec flex justify-center items-center text-white" ref={aboutRef}>
         <article className="indvAS flex flex-auto h-full justify-center items-center flex-col justify-around my-auto">
           <div className="aboutBox ml-auto" data-aos="fade">
@@ -404,6 +430,9 @@ function App() {
           </div>
         </article>
       </section>
+
+      {/* Footer */}
+
       <footer className="flex justify-center items-center md:text-lg text-sm flex-col">
         <div className="footExtension md:text-sm text-xs">
           Made with ReactJS, Tailwind and AOS {"(michalsnik)"}. Hosted by GitHub Pages.

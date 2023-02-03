@@ -304,6 +304,7 @@ nav{
     border-bottom-color:var(--border1);
     max-height:30px;
     color:rgb(165, 165, 165);
+    cursor:pointer;
 }
 .opt:hover{
     transform:scale(1.1);
@@ -920,4 +921,46 @@ footer{
     color:#22395c;
     font-size:0.7em;
     margin-top:15%;
+}
+
+/* Other Stylings */
+
+.contactPopup{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color: rgb(0, 0, 0, 0.3);
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    top:9%;
+    z-index:9;
+}
+.contactHeader{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:3%;
+    width:50%;
+    text-align:center;
+    border-bottom-color:var(--border1);
+    border-bottom-width:1px;
+    border-bottom-style:solid;
+}
+.contactWindow{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:white;
+    height: 50%;
+    width: 25%;
+    min-height:375px;
+    min-width:350px;
+    background-color:var(--primary2);
+    border-radius:24px;
+    
+}
+.contactRef{
+    color:rgb(205, 31, 101);
 }
