@@ -904,13 +904,14 @@ nav{
     max-height:8px;
 }
 
-/* About Section end */
+/* Footer Section start */
 
 footer{
     color:#22395c;
     background-color: var(--primary2);
     padding-bottom:5%;
     max-height:400px;
+    width:100vw;
 }
 .footExtension{
     display:flex;

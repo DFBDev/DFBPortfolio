@@ -433,7 +433,7 @@ function App() {
 
       {/* Footer */}
 
-      <footer className="flex justify-center items-center md:text-lg text-sm flex-col">
+      <footer className="flex justify-center items-center md:text-lg text-sm flex-col md:ml-4 ml-2">
         <div className="footExtension md:text-sm text-xs">
           Made with ReactJS, Tailwind and AOS {"(michalsnik)"}. Hosted by GitHub Pages.
         </div>
