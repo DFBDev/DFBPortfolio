@@ -264,7 +264,6 @@ function App() {
                 <li className="tlSlot" data-aos="fade-left">HTML<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">CSS<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">React<div className="bulletPoint"><div className="bpInner"></div></div></li>
-                <li className="tlSlot" data-aos="fade-left">Node.js<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">Firebase<div className="bulletPoint"><div className="bpInner"></div></div></li>
           </ul>
           <div className="repoLink rlr1">
@@ -279,17 +278,20 @@ function App() {
           </div>
           <div className="projTitleHolder pth2 mt-2 rounded-tl-lg rounded-tr-lg">
             <div className="projTitle">
-              <h1 className="pT2 text-neutral-400">Sign-Up Form</h1>
+              <h1 className="pT2 text-neutral-400">TutorTabs</h1>
             </div>
             <p className="mb-auto text-gray-500 text-xs text-center w-3/4">
-              Simple Sign-up Form with automatic form validation, made purely with HTML and CSS. Made largely as a useful display of practical
-              knowledge of modern design, HTML semantics/attributes, and common CSS practices.
+              Firebase-powered CRUD app designed to help Tutors and Teachers keep "tabs" on their students/tutorees. Equipped with 
+              dynamically updated UI and content, users who sign in will be able to save their color preferences and consistently generate appropriate profile data.
             </p>
           </div>
           <ul className="toolsList tll1 text-neutral-400">
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>HTML</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>CSS</li>
-                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>Template</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>Firebase</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>Tailwind</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>React</li>
+                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>FramerMotion</li>
           </ul>
           <div className="repoLink rll1">
               <a href="https://github.com/DFBDev/SignUpForm" target="_blank">
@@ -314,7 +316,6 @@ function App() {
                 <li className="tlSlot" data-aos="fade-left">HTML<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">CSS<div className="bulletPoint"><div className="bpInner"></div></div></li>
                 <li className="tlSlot" data-aos="fade-left">React<div className="bulletPoint"><div className="bpInner"></div></div></li>
-                <li className="tlSlot" data-aos="fade-left">Node.js<div className="bulletPoint"><div className="bpInner"></div></div></li>
           </ul>
           <div className="repoLink rlr2">
               <a href="https://github.com/DFBDev/React-Calculator" target="_blank">
@@ -339,7 +340,6 @@ function App() {
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>HTML</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>CSS</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>React</li>
-                <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>Node.js</li>
                 <li className="tlSlot tlsl" data-aos="fade-right"><div className="bulletPoint bpl"><div className="bpInner"></div></div>WIP</li>
           </ul>
           <div className="repoLink rll2">
